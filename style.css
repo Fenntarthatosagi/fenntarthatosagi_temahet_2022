@@ -2,8 +2,8 @@
 :root.dark {
     --c_black: black;
     --c_white: white;
-    --c_body: rgb(53, 53, 53);
-    --c_main: rgb(53, 53, 53);
+    --c_body: rgb(42, 77, 33);
+    --c_main: rgb(50, 119, 76);
     --c_header: rgb(102, 102, 102);
     --c_nav: rgb(77, 77, 77);
     --c_nav_li: gray;
