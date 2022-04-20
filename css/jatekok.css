@@ -1,147 +1,53 @@
-
-main {
-    grid-template-areas: "h"
-                         "n"
-                         "a"
-                         "f";
-}
-
-article>div {
-    margin: 5px;
+.header, .main, .footer {
+    padding: 5px;
     border: solid 1px black;
 }
 
+.header {
+    background-color: rgb(108, 108, 255);
+    text-align: center;
+}
 
+.footer {
+    background-color: rgb(107, 107, 255);
+    text-align: center;
+}
 
-#ttt_name, #options, #ttt, #ttt_info {
+#memory_game {
+    background-color: rgb(142, 142, 255);
+}
+
+#cards {
+    background-color: rgb(77, 77, 192);
     border: solid 1px black;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 5px;
 }
 
-#ttt_div {
-    background-color: rgb(150, 150, 150);
-    display: grid;
-    grid-template-areas: "t_h t_h"
-                         "t_s t_s"
-                         "t_a t_as";
+.card {
+    flex: 0 0 auto;
+    width: 20%;
+    background-color: rgb(88, 80, 80);
+    border-radius: 5px;
+    border: solid 1px black;
+    padding: 5px;
+    margin: 5px;
 }
 
-#ttt_name {
-    grid-area: t_h;
-    text-align: center;
+.card>img {
+    width: 100%;
+    margin: auto;
 }
 
 #options {
-    grid-area: t_s;
-    background-color: rgb(168, 168, 168);
-}
-
-#ttt {
-    grid-area: t_a;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    background-color: bisque;
-}
-
-#ttt_info {
-    grid-area: t_as;
-}
-
-#options>p {
-    font-weight: bold;
-} 
-
-#ttt>div {
-    background-color: rgb(73, 73, 73);
+    background-color: rgb(69, 69, 160);
     border: solid 1px black;
-    flex: 0 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#ttt>.mezo {
-    background-color: gray;
-}
-
-#ttt>.selected {
-    background-color: cornsilk;
-}
-
-#progress>p:nth-child(1) {
-    font-weight: bold;
-}
-
-@media all and (max-width:800px)
-{
-    #ttt_div {
-        grid-template-areas: "t_h"
-                             "t_s"
-                             "t_as"
-                             "t_a";
-    }
-}
-
-
-
-
-#kfk_name, #bal, #csonak, #jobb {
-    border: solid 1px black;
-    padding: 5px;
-}
-
-#kfk_div {
-    display: grid;
-    grid-template-areas: "kfk_h kfk_h kfk_h"
-                         "kfk_b kfk_cs kfk_j";
-}
-
-#kfk_div h2 {
-    text-align: center;
-}
-
-#kfk_name {
-    grid-area: kfk_h;
-}
-
-#csonak {
-    grid-area: kfk_cs;
-    background-color: aqua;
-    text-align: center;
-    min-height: 350px;
-    background-image: url("../img/csonak.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment:inherit;
-    width: 400px;
     margin: auto;
-    height: 100%;
-}
-
-#csonak img {
-    width: 40%;
-}
-
-.kiemel {
-    border: solid 1pt black;
+    margin-bottom: 5px;
+    width: 90%;
+    padding: 5px;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.1);
-    cursor: grab;
-}
-
-#kfk_div h1 {
-    text-align: center;
-}
-
-#bal {
-    grid-area: kfk_b;
-}
-
-#jobb {
-    grid-area: kfk_j;
-}
-
-#bal img, #jobb img {
-    width: 100px;
 }
