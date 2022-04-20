@@ -1,0 +1,157 @@
+:root,
+:root.dark {
+    --c_black: black;
+    --c_white: white;
+    --c_body: rgb(53, 53, 53);
+    --c_main: rgb(53, 53, 53);
+    --c_header: rgb(102, 102, 102);
+    --c_nav: rgb(77, 77, 77);
+    --c_nav_li: gray;
+    --c_nav_li_h: rgb(180, 180, 180);
+    --c_article: rgb(104, 104, 104);
+    --c_aside: rgb(104, 104, 104);
+    --c_footer: rgb(61, 61, 61);
+    --c_div: rgb(80, 80, 80);
+}
+:root.light {
+    --c_black: black;
+    --c_white: white;
+    --c_body: rgb(32, 32, 60);
+    --c_main: rgb(226, 226, 226);
+    --c_header: rgb(31, 99, 155);
+    --c_nav: rgb(105, 172, 243);
+    --c_nav_li: rgb(45, 138, 237);
+    --c_nav_li_h: rgb(19, 96, 179);
+    --c_article: rgb(44, 114, 172);
+    --c_aside: rgb(44, 114, 172);
+    --c_footer: rgb(22, 76, 121);
+    --c_div: rgb(25, 87, 138);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--c_body);
+}
+
+header, nav, article, aside, footer {
+    border: solid 1px var(--c_black);
+    padding: 5px;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    background-color: var(--c_main);
+    margin-top: 5px;
+    display: grid;
+    grid-template-areas: "h h h"
+                         "n n n"
+                         "a a as"
+                         "f f f";
+}
+
+header {
+    grid-area: h;
+    text-align: center;
+    background-color: var(--c_header);
+}
+
+#theme  {
+    max-width: 500px;
+    margin: auto;
+}
+
+#theme>button {
+    background-color: var(--c_div);
+    border: 0;
+    padding: 3px;
+    border-radius: 5px;
+    width: 10%;
+}
+
+#theme img {
+    width: 100%;
+}
+
+nav {
+    grid-area: n;
+    padding: 0;
+    background-color: var(--c_nav);
+}
+
+nav ul {
+    width: 90%;
+    margin: auto;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    display: block;
+    background-color: var(--c_nav_li);
+    width: 100%;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+nav ul li:hover {
+    background-color: var(--c_nav_li_h);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--c_white);
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: var(--c_black);
+}
+
+article {
+    grid-area: a;
+    background-color: var(--c_article);
+}
+
+aside {
+    grid-area: as;
+    background-color: var(--c_aside);
+}
+
+footer {
+    grid-area: f;
+    text-align: center;
+    background-color: var(--c_footer);
+}
+
+@media all and (max-width:600px) {
+    
+    main {
+        width: 100%;
+        margin-top: 0;
+        grid-template-areas: "h"
+                             "n"
+                             "a"
+                             "as"
+                             "f";
+    }
+
+    nav ul {
+        width: 95%;
+        flex-direction: column;
+    }
+}
