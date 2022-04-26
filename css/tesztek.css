@@ -1,0 +1,23 @@
+
+#test_alt, #test_koz, #test_fel {
+    border: solid 1px black;
+}
+
+article {
+    padding: 0;
+}
+
+#tests h3 {
+    text-align: center;
+    border: solid 1px black;
+    padding: 5px;
+}
+
+.tests {
+    padding: 5px;
+}
+
+/* HIDE ANSWER */
+.valaszok>h5 {
+    display: none;
+}
