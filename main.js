@@ -1,4 +1,4 @@
-window.onload = init;
+window.addEventListener("load", init);
 
 function querry(name) {
     return document.querySelector(name);
@@ -16,7 +16,7 @@ function init()
 {
     //load main elements
     querry("header").innerHTML += '<div id="theme"><button class="theme_button" onclick="setTheme(false)"><img src="img/sun.png" alt="Light mode"></button></div>';
-    querry("nav").innerHTML += '<ul><li><a href="index.html">Kezdőoldal</a></li><li><a href="cikkek.html">Cikkek</a></li><li><a href="tesztek.html">Tesztek</a></li><li><a href="diabemutato.html">Diabemutató</a></li><li><a href="ruha_bemutato.html">Ruha bemutató</a></li><li><a href="jatekok.html">Játékok</a></li></ul>';
+    querry("nav").innerHTML += '<ul><li><a href="index.html">Kezdőoldal</a></li><li><a href="cikkek.html">Cikkek</a></li><li><a href="tesztek.html">Tesztek</a></li><li><a href="ruha_bemutato.html">Ruha bemutató</a></li><li><a href="jatekok.html">Játékok</a></li></ul>';
     querry("footer").innerHTML += '<p>teszt</p>';
     //document.cookie = "theme=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
 }

@@ -1,4 +1,4 @@
-window.onload = init;
+window.addEventListener("load", init);
 
 //window.addEventListener("resize", change_size)
 
