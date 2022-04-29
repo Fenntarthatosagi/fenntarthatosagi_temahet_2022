@@ -2,7 +2,7 @@
 var cikkek = [
   {
     foCim: "Mi az a TeSZedd!?",
-    kep: "img/cikkek/kep1",
+    kep: "img/cikkek/kep1.jpg",
     bekezdes:
       "A TeSzedd! Önkéntesen a tiszta Magyarországért akció. Hazánk legnagyobb önkéntes mozgalma. Idén immár kilencedik alkalommal valósul meg. A szemétgyűjtési akció keretében szerte az országban „nagytakarítanak” a TeSzedd! önkéntesei. Azért szervezzük meg ezt a mozgalmat minden évben, hogy közösen megtisztítsuk szűkebb-tágabb környezetünket.",
   },
@@ -24,24 +24,28 @@ var cikkek = [
 
 window.addEventListener("load", init);
 function ID(elem) {
-  document.getElementById(elem);
+  return document.getElementById(elem);
 }
 function $1(elem) {
-  document.querySelector(elem);
+  return document.querySelector(elem);
 }
 function $2(elem) {
-  document.querySelectorAll(elem);
+  return document.querySelectorAll(elem);
 }
 
 function init() {
-    var txt = "";
-    for (let index = 0; index < cikkek.length; index++) {
-        txt += 
-              "<div><h1>" + cikkek[index].foCim + "</h1>" +
-              "<img src='" + cikkek[index].kep + "</img>" +
-              "<p>" + cikkek[index].bekezdes + "</p>" +
-              "<h3>"+ cikkek[index].alCim + "</h3>" +
-              "</div>";
-    }
-    console.log(txt);
+  var txt = "";
+  for (let index = 0; index < cikkek.length; index++) {
+    txt +=
+      "<div><h1>" + cikkek[index].foCim + "</h1>" +
+      "<img src=" + cikkek[index].kep + "></img>" +
+      "<p>" + cikkek[index].bekezdes + "</p>" +
+      "<h3>" + cikkek[index].alCim + "</h3>" +
+      "</div>";
+  }
+
+  
+
+  $1("#m").innerHTML = txt;
+  console.log()
 }
