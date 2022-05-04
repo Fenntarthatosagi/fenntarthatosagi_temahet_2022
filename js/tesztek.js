@@ -16,6 +16,7 @@ function query_all(name, arg) {
 }
 
 const before_lehetoseg = " ";
+var current_sh;
 var sheets = [];
 var score = 0;
 var guesses = 0;
@@ -111,7 +112,7 @@ function make_tests()
 
     //onclick
     query_all("form .submit_button", q=>q.addEventListener('click', click_submit));
-    query_all(".kerdes>.lehetosegek>h6", q=>q.onclick = click_valasz);
+    //query_all(".kerdes>.lehetosegek>h6", q=>q.onclick = click_valasz);
 }
 
 function click_submit(evt)
@@ -119,16 +120,29 @@ function click_submit(evt)
     let data = Object.fromEntries(new FormData(evt.target.parentElement).entries());
     console.log(data)
     for (const key in data) {
-        if (Object.hasOwnProperty.call(data, key)) {
-            console.log(data[key]);
+        guesses++;
+        //onsole.log(data[key].replace(before_lehetoseg, "").replace(" ", ""));
+        //console.log(sh_processed[current_sh][key.split("_")[0]][1][0].replace(" ", ""));
+        if(sh_processed[current_sh][key.split("_")[0]][1].length == 1)
+        {
+            if(sh_processed[current_sh][key.split("_")[0]][1][0].replace(" ", "") == data[key].replace(before_lehetoseg, "").replace(" ", ""))
+                score++;
         }
+        else
+        {
+            sh_processed[current_sh][key.split("_")[0]][1].forEach(ans => {
+                if(ans.replace(" ", "") == data[key].replace(before_lehetoseg, "").replace(" ", ""))
+                score++;
+            });
+        }
+        //if (data[key] == sh_processed[current_sh + 1])
     }
     query("#eredmeny").innerHTML = `${score}/${guesses}   ${Math.round(score / guesses * 10000) / 100}%`;
 }
 
 function click_test(evt)
 {
-    let clicked_num = Array.from(evt.target.parentElement.parentElement.children).indexOf(evt.target.parentElement)
+    current_sh = Array.from(evt.target.parentElement.parentElement.children).indexOf(evt.target.parentElement)
     //shut all
     Array.from(evt.target.parentElement.parentElement.children).forEach(test => {
         test.children[1].style.display = "none";
@@ -143,10 +157,13 @@ function reset()
 {
     score = 0;
     guesses = 0;
-    query("#eredmeny").innerHTML = "...";
-    query_all(".siker_e", q=>q.style.display = "none");
-    query_all(".lehetosegek>h6", q=>q.style.color = "black");
-    query_all(".lehetosegek>h6", q=>q.onclick = click_valasz);
+    //RESET INPUT
+    query_all('form input[type=checkbox]', q=>q.value = "lol");
+    console.log(query("form input[type=checkbox]"));
+    // query("#eredmeny").innerHTML = "...";
+    // query_all(".siker_e", q=>q.style.display = "none");
+    // query_all(".lehetosegek>h6", q=>q.style.color = "black");
+    //query_all(".lehetosegek>h6", q=>q.onclick = click_valasz);
 }
 
 function write_test_help(cur_sheet_num, name)
@@ -161,53 +178,16 @@ function write_test_help(cur_sheet_num, name)
         {
             let r = Math.floor(Math.random() * (lehetosegek.length))
             if (kerdes[1].length > 1)
-                kerdes_div += `<input type="checkbox" name="${q_num}" value="${lehetosegek[r]}"><label>${lehetosegek[r]}</label><br>`;
+                kerdes_div += `<input type="checkbox" name="${q_num}_${lehetosegek.length}" value="${lehetosegek[r]}"><label>${lehetosegek[r]}</label><br>`;
             else
                 kerdes_div += `<input type="radio" name="${q_num}" value="${lehetosegek[r]}"><label>${lehetosegek[r]}</label><br>`;
             lehetosegek.splice(r, 1);
         }
         kerdes_div += '</br>';
-        // <form>
-        // <input type="radio" name="fav_lang" value="HTML">
-        // <label>HTML</label><br>
-        // <input type="radio" name="fav_lang" value="CSS">
-        // <label>CSS</label><br>
-        // <input type="radio" name="fav_lang" value="JavaScript">
-        // <label>JavaScript</label></br>
-        // <input class="submit_button" value="Elküld" type="button">
-        // </form>
-
-        // kerdes[1].forEach(valasz => {
-        //     kerdes_div += `<p>${valasz}</p>`;
-        // });
-        //lehetőségek
         q_num++;
     });
     kerdes_div += '<input class="submit_button" value="Elküld" type="button"></form>';
     query(`#test_${name}>.tests`).innerHTML += kerdes_div;
-}
-
-function write_test_help_2(cur_sheet, name)
-{
-    cur_sheet.forEach(kerdes => {
-        let kerdes_div = '<div class="kerdes">';
-        kerdes_div += `<h4>${kerdes[0]}</h4><div class="valaszok">`;
-        kerdes[1].forEach(valasz => {
-            kerdes_div += `<p>${valasz}</p>`;
-        });
-        //lehetőségek
-        kerdes_div += `</div><div class="lehetosegek">`;
-        let lehetosegek = kerdes[2].copyWithin();
-        while(lehetosegek.length > 0)
-        {
-            let r = Math.floor(Math.random() * (lehetosegek.length))
-            kerdes_div += `<h6>${lehetosegek[r]}</h6>`;
-            lehetosegek.splice(r, 1);
-        }
-        kerdes_div += '</div><div class="siker_e"></div></div>';
-        query(`#test_${name}>.tests`).innerHTML += kerdes_div;
-    });
-    query_all(".siker_e", q=>q.style.display = "none");
 }
 
 function check_ans(lehet)
