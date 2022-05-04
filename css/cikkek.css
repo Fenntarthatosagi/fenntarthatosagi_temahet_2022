@@ -1,0 +1,31 @@
+main {
+    width: 1500px;
+    margin: auto;
+    background-color: var(--c_main);
+    margin-top: 5px;
+    display: grid;
+    grid-template-areas: "h h h"
+                         "n n n"
+                         "a a as"
+                         "f f f";
+}
+header {
+    grid-area: h;
+    text-align: center;
+}
+nav {
+    grid-area: n;
+    text-align: center;
+}
+article {
+    grid-area: a;
+    text-align: center;
+}
+aside {
+    grid-area: as;
+    text-align: center;
+}
+footer {
+    grid-area: f;
+    text-align: center;
+}
