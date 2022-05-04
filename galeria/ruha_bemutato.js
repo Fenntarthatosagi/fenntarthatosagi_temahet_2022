@@ -11,15 +11,31 @@ function $(elem) {
 var kepektomb = [{
     kepEleresiut: "ruhakepek/organic.jpg",
     cim: "lol",
-    keszitette: "Alig Elek",
-    sex: "unisex",
-    leiras: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad velit hic aliquid quidem sapiente suscipit esse quibusdam eaque accusantium, recusandae libero amet similique blanditiis sit magni autem. Placeat, facere dicta? Repellat inventoreveritatis non repellendus iste ea saepe ullam sint ab totam, velit maiores eius obcaecati unde at doloribus earum laudantium dignissimos aperiam quod numquam architecto facere ? Exercitationem, eaque accusantium.",
+    keszitette: "Alig Elek1",
+    sex: "1unisex",
+    leiras: "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad velit hic aliquid quidem sapiente suscipit esse quibusdam eaque accusantium, recusandae libero amet similique blanditiis sit magni autem. Placeat, facere dicta? Repellat inventoreveritatis non repellendus iste ea saepe ullam sint ab totam, velit maiores eius obcaecati unde at doloribus earum laudantium dignissimos aperiam quod numquam architecto facere ? Exercitationem, eaque accusantium.",
+    tervfaz: "1varázslat"
+
+}, {
+    kepEleresiut: "ruhakepek/organic.jpg",
+    cim: "lol",
+    keszitette: "Alig Elek2",
+    sex: "2unisex",
+    leiras: "2lorem ipsum",
     tervfaz: "varázslat"
 
 }, {
     kepEleresiut: "ruhakepek/organic.jpg",
     cim: "lol",
-    keszitette: "Alig Elek",
+    keszitette: "Alig Elek3",
+    sex: "3unisex",
+    leiras: "3lorem ipsum",
+    tervfaz: "varázslat"
+
+}, {
+    kepEleresiut: "ruhakepek/organic.jpg",
+    cim: "lol",
+    keszitette: "Alig Elek4",
     sex: "unisex",
     leiras: "lorem ipsum",
     tervfaz: "varázslat"
@@ -27,23 +43,7 @@ var kepektomb = [{
 }, {
     kepEleresiut: "ruhakepek/organic.jpg",
     cim: "lol",
-    keszitette: "Alig Elek",
-    sex: "unisex",
-    leiras: "lorem ipsum",
-    tervfaz: "varázslat"
-
-}, {
-    kepEleresiut: "ruhakepek/organic.jpg",
-    cim: "lol",
-    keszitette: "Alig Elek",
-    sex: "unisex",
-    leiras: "lorem ipsum",
-    tervfaz: "varázslat"
-
-}, {
-    kepEleresiut: "ruhakepek/organic.jpg",
-    cim: "lol",
-    keszitette: "Alig Elek",
+    keszitette: "Alig Elek5",
     sex: "unisex",
     leiras: "lorem ipsum",
     tervfaz: "varázslat"
@@ -127,15 +127,6 @@ function init() {
     var modalImg = document.querySelectorAll(".csakakepek img")[0];
     console.log(modalImg);
     var captionText = document.getElementById("caption");
-    modalImg.onclick = function() {
-        modal.style.display = "block";
-        ID("alkoto").innerHTML = "<h1> " + kepektomb[aktKep].keszitette + "</h1>";
-        console.log("ki az alkoto");
-        console.log(ID("alkoto").alt = kepektomb[0].keszitette)
-        megjelenit(aktKep);
-        console.log("mi a kep elérési útja");
-        ID("leiras").innerHTML = "<p> " + kepektomb[aktKep].leiras + "<ul><li>Nem: " + kepektomb[aktKep].sex + "</li><li>A tervezés fázisai:" + kepektomb[aktKep].tervfaz + "</li></ul<p>";
-    }
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
@@ -144,6 +135,23 @@ function init() {
     span.onclick = function() {
         modal.style.display = "none";
     }
+    kepekL = txt;
+    const szinesElembenDivTomb = document.querySelectorAll("#kepgaleria>div");
+    for (let index = 0; index < szinesElembenDivTomb.length; index++) {
+        const element = szinesElembenDivTomb[index];
+        element.addEventListener("click", function() {
+            console.log("Ügyesek vagyunk");
+            modal.style.display = "block";
+            ID("alkoto").innerHTML = "<h1> " + kepektomb[index].keszitette + "</h1>";
+            console.log("ki az alkoto");
+            console.log(ID("alkoto").alt = kepektomb[index].keszitette)
+            megjelenit(index);
+            console.log("mi a kep elérési útja");
+            ID("leiras").innerHTML = "<p> " + kepektomb[index].leiras + "<ul><li>Nem: " + kepektomb[index].sex + "</li><li>A tervezés fázisai:" + kepektomb[index].tervfaz + "</li></ul<p>";
+
+        });
+    }
+
 }
 var aktKep = 0;
 
