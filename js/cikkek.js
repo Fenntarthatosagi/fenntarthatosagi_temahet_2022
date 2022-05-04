@@ -12,7 +12,7 @@ function $2(elem) {
 
 const cikkek = [];
 function init() {
-  fetch("../js/cikkek.json")
+  fetch("cikkek.json")
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
