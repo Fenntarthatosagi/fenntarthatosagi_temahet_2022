@@ -12,12 +12,12 @@ function $2(elem) {
 
 const cikkek = [];
 function init() {
-  fetch("cikkek.json")
+  fetch("../js/cikkek.json")
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
-      console.log(data.cikkek);
-      data.cikkek.forEach((elem) => {
+      console.log(data.GretiCikk);
+      data.GretiCikk.forEach((elem) => {
         cikkek.push(elem);
       });
       console.log(cikkek);
@@ -26,27 +26,28 @@ function init() {
     .catch((err) => {
       console.log(err);
     });
-
+}
+function feldolgoz() {
   var txt = "";
-  for (let index = 0; index < GretiCikk.length; index++) {
+  cikkek.forEach(function (cikk) {
     txt += "<div>";
-    for (const key in GretiCikk[index]) {
+    for (const key in cikk) {
+      console.log(key);
       if (key == "foCim") {
-        txt += "<h1>" + GretiCikk[index][key] + "</h1>";
+        txt += "<h1>" + cikk[key] + "</h1>";
       }
       if (key == "kep") {
-        txt += "<img src=" + GretiCikk[index][key] + "></img>";
+        txt += "<img src=" + cikk[key] + "></img>";
       }
-      if (key == "bekezdes") {
-        txt += "<p>" + GretiCikk[index][key] + "</p>";
+      if (key.indexOf("bekezdes") >= 0) {
+        txt += "<p>" + cikk[key] + "</p>";
       }
       if (key == "alCim") {
-        txt += "<h3>" + GretiCikk[index][key] + "</h3>";
+        txt += "<h3>" + cikk[key] + "</h3>";
       }
     }
     txt += "</div>";
-  }
-
-  $1("#main").innerHTML = txt;
-  console.log();
+  });
+  console.log(txt);
+  $2("#main")[0].innerHTML = txt;
 }
