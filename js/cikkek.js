@@ -10,7 +10,23 @@ function $2(elem) {
   return document.querySelectorAll(elem);
 }
 
+const cikkek = [];
 function init() {
+  fetch("cikkek.json")
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      console.log(data.cikkek);
+      data.cikkek.forEach((elem) => {
+        cikkek.push(elem);
+      });
+      console.log(cikkek);
+      feldolgoz();
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+
   var txt = "";
   for (let index = 0; index < GretiCikk.length; index++) {
     txt += "<div>";
