@@ -15,7 +15,7 @@ function query_all(name, arg) {
     document.querySelectorAll(name).forEach(elem => {arg(elem)});
 }
 
-const before_lehetoseg = "-";
+const before_lehetoseg = " ";
 var sheets = [];
 var score = 0;
 var guesses = 0;
@@ -61,10 +61,10 @@ function process_xlsx()
     oReq.send();
 }
 
+const sh_processed = [];
 function make_tests()
 {
     //sheets processing
-    let sh_processed = [];
     for (let x = 1; x < sheets.length; x++)
     {
         let sh_temp = [];
@@ -105,20 +105,30 @@ function make_tests()
     }
     //write out
     console.log(sh_processed);
-    write_test_help(sh_processed[0], "alt");
-    write_test_help(sh_processed[1], "koz");
-    write_test_help(sh_processed[2], "fel");
+    write_test_help(0, "alt");
+    write_test_help(1, "koz");
+    write_test_help(2, "fel");
 
     //onclick
+    query_all("form .submit_button", q=>q.addEventListener('click', click_submit));
     query_all(".kerdes>.lehetosegek>h6", q=>q.onclick = click_valasz);
 }
 
+function click_submit(evt)
+{
+    let data = Object.fromEntries(new FormData(evt.target.parentElement).entries());
+    console.log(data)
+    for (const key in data) {
+        if (Object.hasOwnProperty.call(data, key)) {
+            console.log(data[key]);
+        }
+    }
+    query("#eredmeny").innerHTML = `${score}/${guesses}   ${Math.round(score / guesses * 10000) / 100}%`;
+}
 
-//DISPLAY NONE FOR ALL TEST DIVS EXEPT THE CLICKED + RESET SCORE ON CLICK
 function click_test(evt)
 {
     let clicked_num = Array.from(evt.target.parentElement.parentElement.children).indexOf(evt.target.parentElement)
-    console.log(clicked_num);
     //shut all
     Array.from(evt.target.parentElement.parentElement.children).forEach(test => {
         test.children[1].style.display = "none";
@@ -139,7 +149,45 @@ function reset()
     query_all(".lehetosegek>h6", q=>q.onclick = click_valasz);
 }
 
-function write_test_help(cur_sheet, name)
+function write_test_help(cur_sheet_num, name)
+{
+    let cur_sheet = sh_processed[cur_sheet_num];
+    let q_num = 0;
+    let kerdes_div = '<form class="kerdes">';
+    cur_sheet.forEach(kerdes => {
+        kerdes_div += `<label>${kerdes[0]}</label><br></br>`;
+        let lehetosegek = kerdes[2].copyWithin();
+        while(lehetosegek.length > 0)
+        {
+            let r = Math.floor(Math.random() * (lehetosegek.length))
+            if (kerdes[1].length > 1)
+                kerdes_div += `<input type="checkbox" name="${q_num}" value="${lehetosegek[r]}"><label>${lehetosegek[r]}</label><br>`;
+            else
+                kerdes_div += `<input type="radio" name="${q_num}" value="${lehetosegek[r]}"><label>${lehetosegek[r]}</label><br>`;
+            lehetosegek.splice(r, 1);
+        }
+        kerdes_div += '</br>';
+        // <form>
+        // <input type="radio" name="fav_lang" value="HTML">
+        // <label>HTML</label><br>
+        // <input type="radio" name="fav_lang" value="CSS">
+        // <label>CSS</label><br>
+        // <input type="radio" name="fav_lang" value="JavaScript">
+        // <label>JavaScript</label></br>
+        // <input class="submit_button" value="Elküld" type="button">
+        // </form>
+
+        // kerdes[1].forEach(valasz => {
+        //     kerdes_div += `<p>${valasz}</p>`;
+        // });
+        //lehetőségek
+        q_num++;
+    });
+    kerdes_div += '<input class="submit_button" value="Elküld" type="button"></form>';
+    query(`#test_${name}>.tests`).innerHTML += kerdes_div;
+}
+
+function write_test_help_2(cur_sheet, name)
 {
     cur_sheet.forEach(kerdes => {
         let kerdes_div = '<div class="kerdes">';
@@ -169,7 +217,7 @@ function check_ans(lehet)
         if(answer.innerHTML.replace(" ", "") == lehet.innerHTML.replace(before_lehetoseg, "").replace(" ", ""))
             van = true;
     });
-    return van;
+    return van
 }
 
 function click_valasz(evt)
