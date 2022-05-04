@@ -13,11 +13,11 @@
     text-align: center;
 }
 
-#memory_game {
+#pair_game, #memory_game {
     background-color: rgb(142, 142, 255);
 }
 
-#cards {
+#cards, #cards_mem {
     background-color: rgb(77, 77, 192);
     border: solid 1px black;
     margin: auto;
@@ -27,7 +27,7 @@
     padding: 5px;
 }
 
-.card {
+.pair_card, .card_mem {
     flex: 0 0 auto;
     width: 20%;
     background-color: rgb(88, 80, 80);
@@ -37,12 +37,12 @@
     margin: 5px;
 }
 
-.card>img {
+.pair_card>img, .card_mem>img {
     width: 100%;
     margin: auto;
 }
 
-#options {
+#options, #options_mem {
     background-color: rgb(69, 69, 160);
     border: solid 1px black;
     margin: auto;
@@ -50,4 +50,13 @@
     width: 90%;
     padding: 5px;
     border-radius: 5px;
+}
+
+#find_card {
+    margin: auto;
+    width: 30%;
+}
+
+#find_card>img {
+    width: 100%;
 }

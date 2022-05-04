@@ -1,4 +1,4 @@
-window.onload = init;
+window.addEventListener("load", init);
 
 function querry(name) {
     return document.querySelector(name);
@@ -16,41 +16,9 @@ function init()
 {
     //load main elements
     querry("header").innerHTML += '<div id="theme"><button class="theme_button" onclick="setTheme(false)"><img src="img/sun.png" alt="Light mode"></button></div>';
-    querry("nav").innerHTML += '<ul><li><a href="index.html">Kezdőoldal</a></li><li><a href="cikkek.html">Cikkek</a></li><li><a href="tesztek.html">Tesztek</a></li><li><a href="diabemutato.html">Diabemutató</a></li><li><a href="ruha_bemutato.html">Ruha bemutató</a></li><li><a href="jatekok.html">Játékok</a></li></ul>';
+    querry("nav").innerHTML += '<ul><li><a href="index.html">Kezdőoldal</a></li><li><a href="cikkek.html">Cikkek</a></li><li><a href="tesztek.html">Tesztek</a></li><li><a href="ruha_bemutato.html">Ruha bemutató</a></li><li><a href="jatekok.html">Játékok</a></li></ul>';
     querry("footer").innerHTML += '<p>teszt</p>';
-    //process_json();
     //document.cookie = "theme=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-}
-
-function process_json()
-{
-    let file = null;
-    let xmlhttp = new XMLHttpRequest();
-    xmlhttp.overrideMimeType('text/xml; charset=iso-8859-2');
-    xmlhttp.open("get", "test.json", true);
-    xmlhttp.onload = function()
-    {
-        if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
-        {
-            try
-            {
-                let file = JSON.parse(xmlhttp.responseText);
-                console.log(file);
-                file.forEach(elem =>
-                {
-                    elem.name = elem.name.replace("_", " ");
-                    console.log(elem.name[0].toUpperCase() + elem.name.substring(1));
-                });
-            } catch (SyntaxError) {
-                console.log("JSON parsing error!");
-            }
-        }
-        else if(xmlhttp.readyState == 4 && xmlhttp.status != 200)
-        {
-            console.log("ERROR!");
-        }
-    }
-    xmlhttp.send();
 }
 
 
