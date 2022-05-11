@@ -92,7 +92,7 @@ function write_cikk()
             else if(line["type"] == "alcím" || line["type"] == "alpont")
                 txt += `<h3>${line["text"]}</h3>`;
             else if(line["type"] == "bekezdés")
-                txt += `<h4>${line["text"]}</h4>`;
+                txt += `<p>${line["text"]}</p>`;
             else if(line["type"] == "hivatkozás" || line["type"] == "link")
                 txt += `<a href="${line["text"]}">LINK</a>`;
             else
