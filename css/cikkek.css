@@ -1,31 +1,19 @@
 main {
-    width: 1500px;
-    margin: auto;
-    background-color: var(--c_main);
-    margin-top: 5px;
-    display: grid;
-    grid-template-areas: "h h h"
-                         "n n n"
-                         "a a as"
-                         "f f f";
+  background-color: var(--c_main);
 }
-header {
-    grid-area: h;
-    text-align: center;
+#container {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid black;
 }
-nav {
-    grid-area: n;
-    text-align: center;
+#container * {
+  flex: 0 0 auto;
+  width: 50%;
+  
 }
-article {
-    grid-area: a;
-    text-align: center;
+
+@media screen and (max-width: 1200px) {
 }
-aside {
-    grid-area: as;
-    text-align: center;
-}
-footer {
-    grid-area: f;
-    text-align: center;
+@media screen and (max-width: 960px) {
 }
