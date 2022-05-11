@@ -158,9 +158,8 @@ function reset()
     score = 0;
     guesses = 0;
     //RESET INPUT
-    query_all('form input[type=checkbox]', q=>q.value = "lol");
-    console.log(query("form input[type=checkbox]"));
-    // query("#eredmeny").innerHTML = "...";
+    query_all('form input[type=checkbox], form input[type=radio]', q=>q.checked = false);
+    query("#eredmeny").innerHTML = "...";
     // query_all(".siker_e", q=>q.style.display = "none");
     // query_all(".lehetosegek>h6", q=>q.style.color = "black");
     //query_all(".lehetosegek>h6", q=>q.onclick = click_valasz);
