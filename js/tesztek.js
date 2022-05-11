@@ -31,6 +31,8 @@ function init()
 function process_xlsx()
 {
     /* set up XMLHttpRequest */
+    //fenntarthatosagTesztkerdesek
+    //fenntarthatosagCikkek
     let url = "fenntarthatosagTesztkerdesek.xlsx";
     let oReq = new XMLHttpRequest();
     oReq.open("GET", url, true);
@@ -117,10 +119,14 @@ function make_tests()
 
 function click_submit(evt)
 {
+    //get all answers for this test
+    guesses = 0;
+    sh_processed[current_sh].forEach(question => {
+        guesses += question[1].length;
+    });
     let data = Object.fromEntries(new FormData(evt.target.parentElement).entries());
     console.log(data)
     for (const key in data) {
-        guesses++;
         //onsole.log(data[key].replace(before_lehetoseg, "").replace(" ", ""));
         //console.log(sh_processed[current_sh][key.split("_")[0]][1][0].replace(" ", ""));
         if(sh_processed[current_sh][key.split("_")[0]][1].length == 1)
@@ -137,7 +143,7 @@ function click_submit(evt)
         }
         //if (data[key] == sh_processed[current_sh + 1])
     }
-    query("#eredmeny").innerHTML = `${score}/${guesses}   ${Math.round(score / guesses * 10000) / 100}%`;
+    query("#eredmeny").innerHTML = `${score}/${guesses}</br>${Math.round(score / guesses * 10000) / 100}%`;
 }
 
 function click_test(evt)
