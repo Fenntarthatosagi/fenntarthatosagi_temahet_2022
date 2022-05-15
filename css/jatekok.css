@@ -1,3 +1,8 @@
+
+article>div {
+    margin: 5px;
+}
+
 .header, .main, .footer {
     padding: 5px;
     border: solid 1px black;
@@ -55,6 +60,11 @@
 #find_card {
     margin: auto;
     width: 30%;
+}
+
+#main_card_mem>h3 {
+    text-align: center;
+    margin: 5px;
 }
 
 #find_card>img {

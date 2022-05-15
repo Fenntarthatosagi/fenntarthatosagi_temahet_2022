@@ -198,7 +198,6 @@ const amount_options_mem = [4, 8, 12, 16, 32, 40];
 var card_num_mem = 8;
 var turn_speed_mem = 3000;
 var turned_mem = 0;
-var found_mem = 0;
 var find_card_num = 1;
 var cards_left_mem = [];
 var score = 0;
@@ -212,7 +211,6 @@ function start_mem()
     {
         card_left_start.push(true);
     }
-    console.log(card_left_start);
     //popuatin field
     for (let x = 0; x < card_num_mem; x++)
     {
@@ -234,6 +232,7 @@ function start_mem()
     }
     setTimeout(() => {
         query_all(".card_mem>img", q=>q.src = "img/jatekok/hatter.png");
+        query("#main_card_mem").innerHTML = `<h3>Találd meg ezt a kártyát<h3><div id="find_card"><img src="" alt="find this card"></div>`;
         get_find_card();
         query_all(".card_mem>img", q=>q.onclick = click_card_mem);
     }, turn_speed_mem);
@@ -244,10 +243,10 @@ function get_find_card()
     do
     {
         find_card_num = Math.floor(Math.random() * (card_num_mem)) + 1;
-        console.log(find_card_num);
     } while (!cards_left_mem[find_card_num - 1]);
+    console.log("Find: " + (find_card_num - 1));
     cards_left_mem[find_card_num - 1] = false;
-    query("#main_card_mem").innerHTML = `<div id="find_card"><img src="img/jatekok/kep${find_card_num}.png" alt="find this card"></div>`;
+    query("#find_card>img").src = `img/jatekok/kep${find_card_num}.png`;
 }
 
 function set_speed_mem(speed)
@@ -269,10 +268,11 @@ function reset_mem()
         card.src = "img/jatekok/hatter.png";
         card.classList.remove("turned_mem");
         card.onclick = click_card_mem;
-        found_mem = 0;
+        score = 0;
         turned_mem = 0;
+        cards_left_mem = [];
         query("#cards_mem").innerHTML = "";
-        query("#find_card").innerHTML = "";
+        query("#main_card_mem").innerHTML = "";
         query_all("#speed_mem>button", q=>q.disabled = false);
         query_all("#card_num_mem>button", q=>q.disabled = false);
     });
@@ -280,14 +280,18 @@ function reset_mem()
 
 function click_card_mem(evt)
 {
-    console.log(evt.target);
-    evt.target.src = `img/jatekok/kep${evt.target.className.replace(" ", "")}.png`;
+    //console.log(evt.target);
+    let card_number = evt.target.className.replace(" ", "")
+    console.log("Clicked: " + (card_number - 1));
+    cards_left_mem[card_number - 1] = false;
+    console.log(cards_left_mem);
+    evt.target.src = `img/jatekok/kep${card_number}.png`;
     evt.target.classList.add("turned_mem");
     evt.target.onclick = null;
     turned_mem++;
-    if(find_card_num == evt.target.className.replace(" ", ""))
+    if(find_card_num == card_number)
         score++;
-    if(turned_mem == card_num_mem)
+    if(turned_mem == card_num_mem || cards_left_mem.indexOf(true) == -1)
     {
         alert(`A játéknak vége: ${score}/${card_num_mem}`);
         reset_mem();

@@ -11,6 +11,7 @@ article {
     text-align: center;
     border: solid 1px black;
     padding: 5px;
+    cursor: pointer;
 }
 
 .tests {

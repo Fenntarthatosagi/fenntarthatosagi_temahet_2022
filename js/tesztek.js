@@ -16,7 +16,7 @@ function query_all(name, arg) {
 }
 
 const before_lehetoseg = " ";
-var current_sh;
+var current_sh = -1;
 var sheets = [];
 var score = 0;
 var guesses = 0;
@@ -24,7 +24,7 @@ var guesses = 0;
 function init()
 {
     process_xlsx();
-    query_all("#test_alt>h3, #test_koz>h3, #test_fel>h3", q=>q.onclick = click_test);
+    query_all("#tests h3", q=>q.onclick = click_test);
     query_all(".tests", q=>q.style.display = "none");
 }
 
@@ -148,13 +148,17 @@ function click_submit(evt)
 
 function click_test(evt)
 {
+    let prev_sh = current_sh;
     current_sh = Array.from(evt.target.parentElement.parentElement.children).indexOf(evt.target.parentElement)
     //shut all
     Array.from(evt.target.parentElement.parentElement.children).forEach(test => {
         test.children[1].style.display = "none";
     });
     //open evt
-    evt.target.parentElement.children[1].style.display = "unset";
+    if(current_sh != prev_sh)
+        evt.target.parentElement.children[1].style.display = "unset";
+    else
+        current_sh = -1;
     //reset
     reset();
 }
