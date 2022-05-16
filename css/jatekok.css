@@ -3,6 +3,18 @@ article>div {
     margin: 5px;
 }
 
+main {
+    width: 100%;
+}
+
+.content>section {
+    text-align: center;
+}
+
+article {
+    margin: auto;
+}
+
 .header, .main, .footer {
     padding: 5px;
     border: solid 1px black;

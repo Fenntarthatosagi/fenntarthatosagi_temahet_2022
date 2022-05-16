@@ -143,7 +143,7 @@ function click_submit(evt)
         }
         //if (data[key] == sh_processed[current_sh + 1])
     }
-    query("#eredmeny").innerHTML = `${score}/${guesses}</br>${Math.round(score / guesses * 10000) / 100}%`;
+    query("#resoult>.text").innerHTML = `${score}/${guesses}</br>${Math.round(score / guesses * 10000) / 100}%`;
 }
 
 function click_test(evt)
@@ -169,7 +169,7 @@ function reset()
     guesses = 0;
     //RESET INPUT
     query_all('form input[type=checkbox], form input[type=radio]', q=>q.checked = false);
-    query("#eredmeny").innerHTML = "...";
+    query("#resoult>.text").innerHTML = "...";
     // query_all(".siker_e", q=>q.style.display = "none");
     // query_all(".lehetosegek>h6", q=>q.style.color = "black");
     //query_all(".lehetosegek>h6", q=>q.onclick = click_valasz);
@@ -231,5 +231,5 @@ function click_valasz(evt)
     }
     evt.target.parentElement.parentElement.children[3].style.display = "unset";
     guesses++;
-    query("#eredmeny").innerHTML = `${score}/${guesses}   ${Math.round(score / guesses * 10000) / 100}%`;
+    query("#resoult>.text").innerHTML = `${score}/${guesses}   ${Math.round(score / guesses * 10000) / 100}%`;
 }
