@@ -197,3 +197,11 @@ header {
     text-align: center;
     width: 100%;
 }
+
+main>section {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}

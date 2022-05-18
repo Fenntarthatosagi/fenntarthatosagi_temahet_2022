@@ -5,6 +5,8 @@
 
 main {
     width: 100%;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .content>section {
@@ -40,5 +42,16 @@ aside {
 }
 
 .tests {
-    padding: 5px;
+    padding: 10px;
+}
+
+.kerdes {
+    margin: 5px;
+}
+
+@media screen and (max-width: 600px)
+{
+    #main_content {
+        display: inline;
+    }
 }
