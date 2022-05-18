@@ -43,7 +43,7 @@ function beolvas(kulcs) {
 }
 
 function feldolgoz() {
-  var txt = "";
+  let txt = "";
   txt += "<div>";
   cikkek.forEach(function (cikk, index) {
 
@@ -73,13 +73,42 @@ function feldolgoz() {
   });
   txt += "</div>";
   $2("#container")[0].innerHTML += txt;
-  $2("#container > div").forEach(element=>{
-    element.addEventListener("click", function(){
+  $2("#container > div").forEach(element => {
+    element.addEventListener("click", function () {
       let tartalom = event.currentTarget.innerHTML //event target azaz elem amire kattintunk, innerHTML a belső tartalma
       console.log(tartalom);
-      ID("aktualiscikk").innerHTML = tartalom;
+      modal.style.display = "block";
     })
   })
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+
+  // Get the button that opens the modal
+  $2("#container > div").forEach(element => {
+    element.addEventListener("click", function () {
+      let tartalom = event.currentTarget.innerHTML //event target azaz elem amire kattintunk, innerHTML a belső tartalma
+      console.log(tartalom);
+      ID("cikk").innerHTML = tartalom;
+      modal.style.display = "block";
+    })
+  })
+
+  // // Get the <span> element that closes the modal
+  // var span = document.getElementsByClassName("close")[0];
+
+  
+  // // When the user clicks on <span> (x), close the modal
+  // span.onclick = function () {
+  //   modal.style.display = "none";
+  // }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
 }
 
 //esemény kezelő, ami rámutat a div-re, le kell kérni az eseménykezelőben a div-nek az innerHTML-jét és azt megjeleníteni egy tárolóban, ahol megakarjuk jeleníteni a cikkeket
