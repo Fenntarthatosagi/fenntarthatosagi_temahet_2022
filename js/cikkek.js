@@ -46,7 +46,7 @@ function feldolgoz() {
   var txt = "";
   txt += "<div>";
   cikkek.forEach(function (cikk, index) {
-    
+
     for (const key in cikk) {
       // console.log(key);
       // console.log(cikk[key]);
@@ -69,18 +69,17 @@ function feldolgoz() {
         txt += "<li>" + cikk[key] + "</li>";
       }
     }
-    
+
   });
   txt += "</div>";
-  console.log(txt);
   $2("#container")[0].innerHTML += txt;
-}
-
-window.addEventListener("click", megjelenit);
-function megjelenit(
-  
-){
-  
+  $2("#container > div").forEach(element=>{
+    element.addEventListener("click", function(){
+      let tartalom = event.currentTarget.innerHTML //event target azaz elem amire kattintunk, innerHTML a belső tartalma
+      console.log(tartalom);
+      ID("aktualiscikk").innerHTML = tartalom;
+    })
+  })
 }
 
 //esemény kezelő, ami rámutat a div-re, le kell kérni az eseménykezelőben a div-nek az innerHTML-jét és azt megjeleníteni egy tárolóban, ahol megakarjuk jeleníteni a cikkeket
