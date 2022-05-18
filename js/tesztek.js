@@ -121,6 +121,7 @@ function click_submit(evt)
 {
     //get all answers for this test
     guesses = 0;
+    score = 0;
     sh_processed[current_sh].forEach(question => {
         guesses += question[1].length;
     });
