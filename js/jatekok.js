@@ -1,5 +1,4 @@
 window.addEventListener("load", init);
-window.addEventListener("resize", change_size)
 
 //window.addEventListener("resize", change_size)
 
@@ -67,10 +66,9 @@ function init()
 
 function change_size()
 {
-    query_all_raw(".pair_card");
-    query_all_raw(".card_mem");
+    query_all(".pair_card", q=>q.style.width = `${100/(card_num/2)}%`);
+    query_all(".card_mem", q=>q.style.width = `${100/(card_num_mem/2)}%`);
 }
-
 
 
 function pair_start()
@@ -97,6 +95,7 @@ function pair_start()
         query("#cards").innerHTML += `<div class="pair_card"><img class="${pair_num + 1}" src="img/jatekok/hatter.png" alt="card"></div>`;
     }
     query_all(".pair_card>img", q=>q.onclick = click_card);
+    change_size();
 }
 
 function set_speed(speed)
@@ -155,7 +154,7 @@ function reset()
 
 function click_card(evt)
 {
-    evt.target.src = `img/jatekok/kep${evt.target.className.replace("pair_done", "").replace(" ", "")}.png`;
+    evt.target.src = `img/jatekok/kep${evt.target.className.replace("pair_done", "").replace(" ", "")}.jpg`;
     evt.target.classList.add("pair_turned");
     evt.target.onclick = null;
     turned = (turned + 1) % 2;
@@ -200,7 +199,7 @@ function click_card(evt)
 // memory game
 
 const speed_options_mem = [0, 200, 500, 1000, 3000, 5000, 10000];
-const amount_options_mem = [4, 8, 12, 16, 32, 40];
+const amount_options_mem = [2, 4, 8, 12, 16, 20];
 
 var card_num_mem = 8;
 var turn_speed_mem = 3000;
@@ -230,7 +229,7 @@ function start_mem()
         card_left_start[mem_card_num] = false;
         console.log(card_left_start);
         //making card
-        query("#cards_mem").innerHTML += `<div class="card_mem"><img class="${mem_card_num + 1}" src="img/jatekok/kep${mem_card_num + 1}.png" alt="card"></div>`;
+        query("#cards_mem").innerHTML += `<div class="card_mem"><img class="${mem_card_num + 1}" src="img/jatekok/kep${mem_card_num + 1}.jpg" alt="card"></div>`;
     }
     //get target
     for (let x = 0; x < card_num_mem; x++)
@@ -243,6 +242,7 @@ function start_mem()
         get_find_card();
         query_all(".card_mem>img", q=>q.onclick = click_card_mem);
     }, turn_speed_mem);
+    change_size();
 }
 
 function get_find_card()
@@ -253,7 +253,7 @@ function get_find_card()
     } while (!cards_left_mem[find_card_num - 1]);
     console.log("Find: " + (find_card_num - 1));
     cards_left_mem[find_card_num - 1] = false;
-    query("#find_card>img").src = `img/jatekok/kep${find_card_num}.png`;
+    query("#find_card>img").src = `img/jatekok/kep${find_card_num}.jpg`;
 }
 
 function set_speed_mem(speed)
@@ -292,7 +292,7 @@ function click_card_mem(evt)
     console.log("Clicked: " + (card_number - 1));
     cards_left_mem[card_number - 1] = false;
     console.log(cards_left_mem);
-    evt.target.src = `img/jatekok/kep${card_number}.png`;
+    evt.target.src = `img/jatekok/kep${card_number}.jpg`;
     evt.target.classList.add("turned_mem");
     evt.target.onclick = null;
     turned_mem++;

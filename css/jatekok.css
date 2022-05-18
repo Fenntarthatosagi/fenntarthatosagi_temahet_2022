@@ -49,12 +49,12 @@ article {
 
 .pair_card, .card_mem {
     flex: 0 0 auto;
-    width: 25%;
     background-color: rgb(88, 80, 80);
     border-radius: 5px;
     border: solid 1px black;
     padding: 5px;
     max-width: 150px;
+    display: flex;
 }
 
 .pair_card>img, .card_mem>img {
@@ -84,4 +84,5 @@ article {
 
 #find_card>img {
     width: 100%;
+    max-width: 200px;
 }
