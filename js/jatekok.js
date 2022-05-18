@@ -1,4 +1,5 @@
 window.addEventListener("load", init);
+window.addEventListener("resize", change_size)
 
 //window.addEventListener("resize", change_size)
 
@@ -62,6 +63,12 @@ function init()
     amount_options_mem.forEach(amount => {
         query("#card_num_mem").innerHTML += `<button onclick="set_amount_mem(${amount})">${amount} kártya</button>`;
     });
+}
+
+function change_size()
+{
+    query_all_raw(".pair_card");
+    query_all_raw(".card_mem");
 }
 
 
