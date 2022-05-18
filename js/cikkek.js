@@ -1,4 +1,3 @@
-//foCim: <h1>, kep: <img>, bekezdes: <p>, alCim: <h3></h3>
 window.addEventListener("load", init);
 function ID(elem) {
   return document.getElementById(elem);
@@ -10,7 +9,7 @@ function $2(elem) {
   return document.querySelectorAll(elem);
 }
 
-const cikkek = [];
+let cikkek = [];
 function init() {
   beolvas("SzandiCikk");
   beolvas("VZSCikk");
@@ -25,15 +24,17 @@ function init() {
 }
 
 function beolvas(kulcs) {
+  cikkek = [];
   fetch("cikkek.json")
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
-      console.log(data.SzandiCikk);
+      // console.log(data);
+      // console.log(data.SzandiCikk);
+      console.log(kulcs);
       data[kulcs].forEach((elem) => {
         cikkek.push(elem);
       });
-      console.log(cikkek);
+      // console.log(cikkek);
       feldolgoz();
     })
     .catch((err) => {
@@ -43,15 +44,17 @@ function beolvas(kulcs) {
 
 function feldolgoz() {
   var txt = "";
-  cikkek.forEach(function (cikk) {
-    txt += "<div>";
+  txt += "<div>";
+  cikkek.forEach(function (cikk, index) {
+    
     for (const key in cikk) {
-      console.log(key);
+      // console.log(key);
+      // console.log(cikk[key]);
       if (key.includes("foCim")) {
         txt += "<h1>" + cikk[key] + "</h1>";
       }
       if (key.includes("kep")) {
-        txt += "<img src=" + cikk[key] + "></img>";
+        txt += "<img src='" + cikk[key] + "' alt=''></img>";
       }
       if (key.includes("bekezdes") >= 0) {
         txt += "<p>" + cikk[key] + "</p>";
@@ -66,8 +69,16 @@ function feldolgoz() {
         txt += "<li>" + cikk[key] + "</li>";
       }
     }
-    txt += "</div>";
+    
   });
+  txt += "</div>";
   console.log(txt);
   $2("#container")[0].innerHTML += txt;
 }
+
+window.addEventListener("click", megjelenit);
+function megjelenit(){
+  
+}
+
+//esemény kezelő, ami rámutat a div-re, le kell kérni az eseménykezelőben a div-nek az innerHTML-jét és azt megjeleníteni egy tárolóban, ahol megakarjuk jeleníteni a cikkeket

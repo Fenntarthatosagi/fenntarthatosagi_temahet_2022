@@ -1,16 +1,19 @@
 main {
   background-color: var(--c_main);
 }
+#container > div {
+  height: 300px;
+  overflow: hidden;
+  border: 1px solid red;
+  flex: 0 0 30%;
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+}
 #container {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  border: 3px solid black;
-}
-#container * {
-  flex: 0 0 auto;
-  width: 50%;
-  
 }
 
 @media screen and (max-width: 1200px) {
