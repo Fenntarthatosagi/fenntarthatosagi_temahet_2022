@@ -54,6 +54,7 @@ article {
     border: solid 1px black;
     padding: 5px;
     max-width: 150px;
+    display: flex;
 }
 
 .pair_card>img, .card_mem>img {
@@ -83,4 +84,5 @@ article {
 
 #find_card>img {
     width: 100%;
+    max-width: 200px;
 }

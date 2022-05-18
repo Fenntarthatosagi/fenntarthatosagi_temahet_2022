@@ -71,7 +71,6 @@ function change_size()
 }
 
 
-
 function pair_start()
 {
     //making pairs left list
@@ -93,7 +92,7 @@ function pair_start()
         pairs_left[pair_num]--;
         console.log(pairs_left);
         //making card
-        query("#cards").innerHTML += `<div class="pair_card"><img class="${pair_num + 1}" src="img/jatekok/hatter.jpg" alt="card"></div>`;
+        query("#cards").innerHTML += `<div class="pair_card"><img class="${pair_num + 1}" src="img/jatekok/hatter.png" alt="card"></div>`;
     }
     query_all(".pair_card>img", q=>q.onclick = click_card);
     change_size();
@@ -200,7 +199,7 @@ function click_card(evt)
 // memory game
 
 const speed_options_mem = [0, 200, 500, 1000, 3000, 5000, 10000];
-const amount_options_mem = [4, 8, 12, 16, 32, 40];
+const amount_options_mem = [2, 4, 8, 12, 16, 20];
 
 var card_num_mem = 8;
 var turn_speed_mem = 3000;
@@ -293,7 +292,7 @@ function click_card_mem(evt)
     console.log("Clicked: " + (card_number - 1));
     cards_left_mem[card_number - 1] = false;
     console.log(cards_left_mem);
-    evt.target.src = `img/jatekok/kep${card_number}.jph`;
+    evt.target.src = `img/jatekok/kep${card_number}.jpg`;
     evt.target.classList.add("turned_mem");
     evt.target.onclick = null;
     turned_mem++;
