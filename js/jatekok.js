@@ -93,7 +93,7 @@ function pair_start()
         pairs_left[pair_num]--;
         console.log(pairs_left);
         //making card
-        query("#cards").innerHTML += `<div class="pair_card"><img class="${pair_num + 1}" src="img/jatekok/hatter.png" alt="card"></div>`;
+        query("#cards").innerHTML += `<div class="pair_card"><img class="${pair_num + 1}" src="img/jatekok/hatter.jpg" alt="card"></div>`;
     }
     query_all(".pair_card>img", q=>q.onclick = click_card);
     change_size();
@@ -155,7 +155,7 @@ function reset()
 
 function click_card(evt)
 {
-    evt.target.src = `img/jatekok/kep${evt.target.className.replace("pair_done", "").replace(" ", "")}.png`;
+    evt.target.src = `img/jatekok/kep${evt.target.className.replace("pair_done", "").replace(" ", "")}.jpg`;
     evt.target.classList.add("pair_turned");
     evt.target.onclick = null;
     turned = (turned + 1) % 2;
@@ -230,7 +230,7 @@ function start_mem()
         card_left_start[mem_card_num] = false;
         console.log(card_left_start);
         //making card
-        query("#cards_mem").innerHTML += `<div class="card_mem"><img class="${mem_card_num + 1}" src="img/jatekok/kep${mem_card_num + 1}.png" alt="card"></div>`;
+        query("#cards_mem").innerHTML += `<div class="card_mem"><img class="${mem_card_num + 1}" src="img/jatekok/kep${mem_card_num + 1}.jpg" alt="card"></div>`;
     }
     //get target
     for (let x = 0; x < card_num_mem; x++)
@@ -254,7 +254,7 @@ function get_find_card()
     } while (!cards_left_mem[find_card_num - 1]);
     console.log("Find: " + (find_card_num - 1));
     cards_left_mem[find_card_num - 1] = false;
-    query("#find_card>img").src = `img/jatekok/kep${find_card_num}.png`;
+    query("#find_card>img").src = `img/jatekok/kep${find_card_num}.jpg`;
 }
 
 function set_speed_mem(speed)
@@ -293,7 +293,7 @@ function click_card_mem(evt)
     console.log("Clicked: " + (card_number - 1));
     cards_left_mem[card_number - 1] = false;
     console.log(cards_left_mem);
-    evt.target.src = `img/jatekok/kep${card_number}.png`;
+    evt.target.src = `img/jatekok/kep${card_number}.jph`;
     evt.target.classList.add("turned_mem");
     evt.target.onclick = null;
     turned_mem++;
