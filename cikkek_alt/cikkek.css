@@ -1,0 +1,21 @@
+
+#test_alt, #test_koz, #test_fel {
+    border: solid 1px black;
+}
+
+article {
+    padding: 0;
+}
+
+#cikkek {
+    padding: 5px;
+}
+
+.cikk {
+    padding: 5px;
+    border: solid 1px black;
+}
+
+.line {
+    padding: 5px;
+}

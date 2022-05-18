@@ -1,23 +1,44 @@
 
-#test_alt, #test_koz, #test_fel {
+#test_alt, #test_koz, #test_fel, aside {
     border: solid 1px black;
 }
 
-article {
-    padding: 0;
+main {
+    width: 100%;
+}
+
+.content>section {
+    text-align: center;
+}
+
+#main_content {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+article, aside {
+    width: 98%;
+    margin: auto;
+}
+
+aside {
+    padding: 5px;
+    height: 100%;
+}
+
+#resoult {
+    top: 100px;
+    position: sticky;
 }
 
 #tests h3 {
     text-align: center;
     border: solid 1px black;
     padding: 5px;
+    cursor: pointer;
+    margin: 0;
 }
 
 .tests {
     padding: 5px;
-}
-
-/* HIDE ANSWER */
-.valaszok {
-    display: none;
 }

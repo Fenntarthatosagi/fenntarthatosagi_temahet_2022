@@ -19,7 +19,7 @@ body {
     --animation-timing-curve: ease-in-out;
 }
 
-.header {
+header {
     display: flex;
     align-items: center;
     position: sticky;
@@ -151,6 +151,10 @@ body {
     text-decoration: none;
     align-items: center;
     padding-left: 25px;
+}
+
+.sidebar-link img {
+    width: 30px;
 }
 
 .sidebar-list-item {

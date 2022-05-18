@@ -16,7 +16,7 @@ function query_all(name, arg) {
 }
 
 const before_lehetoseg = " ";
-var current_sh;
+var current_sh = -1;
 var sheets = [];
 var score = 0;
 var guesses = 0;
@@ -24,13 +24,15 @@ var guesses = 0;
 function init()
 {
     process_xlsx();
-    query_all("#test_alt>h3, #test_koz>h3, #test_fel>h3", q=>q.onclick = click_test);
+    query_all("#tests h3", q=>q.onclick = click_test);
     query_all(".tests", q=>q.style.display = "none");
 }
 
 function process_xlsx()
 {
     /* set up XMLHttpRequest */
+    //fenntarthatosagTesztkerdesek
+    //fenntarthatosagCikkek
     let url = "fenntarthatosagTesztkerdesek.xlsx";
     let oReq = new XMLHttpRequest();
     oReq.open("GET", url, true);
@@ -117,10 +119,14 @@ function make_tests()
 
 function click_submit(evt)
 {
+    //get all answers for this test
+    guesses = 0;
+    sh_processed[current_sh].forEach(question => {
+        guesses += question[1].length;
+    });
     let data = Object.fromEntries(new FormData(evt.target.parentElement).entries());
     console.log(data)
     for (const key in data) {
-        guesses++;
         //onsole.log(data[key].replace(before_lehetoseg, "").replace(" ", ""));
         //console.log(sh_processed[current_sh][key.split("_")[0]][1][0].replace(" ", ""));
         if(sh_processed[current_sh][key.split("_")[0]][1].length == 1)
@@ -137,18 +143,22 @@ function click_submit(evt)
         }
         //if (data[key] == sh_processed[current_sh + 1])
     }
-    query("#eredmeny").innerHTML = `${score}/${guesses}   ${Math.round(score / guesses * 10000) / 100}%`;
+    query("#resoult>.text").innerHTML = `${score}/${guesses}</br>${Math.round(score / guesses * 10000) / 100}%`;
 }
 
 function click_test(evt)
 {
+    let prev_sh = current_sh;
     current_sh = Array.from(evt.target.parentElement.parentElement.children).indexOf(evt.target.parentElement)
     //shut all
     Array.from(evt.target.parentElement.parentElement.children).forEach(test => {
         test.children[1].style.display = "none";
     });
     //open evt
-    evt.target.parentElement.children[1].style.display = "unset";
+    if(current_sh != prev_sh)
+        evt.target.parentElement.children[1].style.display = "unset";
+    else
+        current_sh = -1;
     //reset
     reset();
 }
@@ -158,9 +168,8 @@ function reset()
     score = 0;
     guesses = 0;
     //RESET INPUT
-    query_all('form input[type=checkbox]', q=>q.value = "lol");
-    console.log(query("form input[type=checkbox]"));
-    // query("#eredmeny").innerHTML = "...";
+    query_all('form input[type=checkbox], form input[type=radio]', q=>q.checked = false);
+    query("#resoult>.text").innerHTML = "...";
     // query_all(".siker_e", q=>q.style.display = "none");
     // query_all(".lehetosegek>h6", q=>q.style.color = "black");
     //query_all(".lehetosegek>h6", q=>q.onclick = click_valasz);
@@ -222,5 +231,5 @@ function click_valasz(evt)
     }
     evt.target.parentElement.parentElement.children[3].style.display = "unset";
     guesses++;
-    query("#eredmeny").innerHTML = `${score}/${guesses}   ${Math.round(score / guesses * 10000) / 100}%`;
+    query("#resoult>.text").innerHTML = `${score}/${guesses}   ${Math.round(score / guesses * 10000) / 100}%`;
 }

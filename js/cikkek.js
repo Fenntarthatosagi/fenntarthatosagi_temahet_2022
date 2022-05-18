@@ -12,12 +12,25 @@ function $2(elem) {
 
 const cikkek = [];
 function init() {
+  beolvas("SzandiCikk");
+  beolvas("VZSCikk");
+  beolvas("DoriCikk");
+  beolvas("MesiCikk");
+  beolvas("GretiCikk");
+  beolvas("BettiCikk");
+  beolvas("ToriCikk");
+  beolvas("BareszCikk");
+  beolvas("VeraCikk");
+  beolvas("Vera2Cikk");
+}
+
+function beolvas(kulcs) {
   fetch("cikkek.json")
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
-      console.log(data.GretiCikk);
-      data.GretiCikk.forEach((elem) => {
+      console.log(data.SzandiCikk);
+      data[kulcs].forEach((elem) => {
         cikkek.push(elem);
       });
       console.log(cikkek);
@@ -27,27 +40,34 @@ function init() {
       console.log(err);
     });
 }
+
 function feldolgoz() {
   var txt = "";
   cikkek.forEach(function (cikk) {
     txt += "<div>";
     for (const key in cikk) {
       console.log(key);
-      if (key == "foCim") {
+      if (key.includes("foCim")) {
         txt += "<h1>" + cikk[key] + "</h1>";
       }
-      if (key == "kep") {
+      if (key.includes("kep")) {
         txt += "<img src=" + cikk[key] + "></img>";
       }
-      if (key.indexOf("bekezdes") >= 0) {
+      if (key.includes("bekezdes") >= 0) {
         txt += "<p>" + cikk[key] + "</p>";
       }
-      if (key == "alCim") {
-        txt += "<h3>" + cikk[key] + "</h3>";
+      if (key.includes("alCim")) {
+        txt += "<h2>" + cikk[key] + "</h2>";
+      }
+      if (key.includes("felsorolas")) {
+        txt += "<li>" + cikk[key] + "</li>";
+      }
+      if (key.includes("link")) {
+        txt += "<li>" + cikk[key] + "</li>";
       }
     }
     txt += "</div>";
   });
   console.log(txt);
-  $2("#main")[0].innerHTML = txt;
+  $2("#container")[0].innerHTML += txt;
 }
