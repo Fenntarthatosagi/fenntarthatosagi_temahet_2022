@@ -15,7 +15,7 @@ function querry_all(name, arg) {
 function init() {
     //load main elements
     querry("header").innerHTML += '<div id="theme"><button class="theme_button" onclick="setTheme(false)"><img src="img/sun.png" alt="Light mode"></button></div>';
-    querry("nav").innerHTML += '<ul><li><a href="index.html">Kezdőoldal</a></li><li><a href="cikkek.html">Cikkek</a></li><li><a href="tesztek.html">Tesztek</a></li><li><a href="ruha_bemutato.html">Ruha bemutató</a></li><li><a href="jatekok.html">Játékok</a></li></ul>';
+    querry("nav").innerHTML += '<ul><li><a href="index.html">Kezdőoldal</a></li><li><a href="cikkek.html">Cikkek</a></li><li><a href="tesztek.html">Tesztek</a></li><li><a href="galeria/galeria.html">Ruha bemutató</a></li><li><a href="jatekok.html">Játékok</a></li></ul>';
     querry("body").innerHTML += '';
     querry("article").innerHTML += '<img src="">';
     querry("aside").innerHTML += '';
