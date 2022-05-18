@@ -49,7 +49,6 @@ article {
 
 .pair_card, .card_mem {
     flex: 0 0 auto;
-    width: 25%;
     background-color: rgb(88, 80, 80);
     border-radius: 5px;
     border: solid 1px black;

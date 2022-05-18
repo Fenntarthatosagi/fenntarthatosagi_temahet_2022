@@ -1,5 +1,4 @@
 window.addEventListener("load", init);
-window.addEventListener("resize", change_size)
 
 //window.addEventListener("resize", change_size)
 
@@ -67,8 +66,8 @@ function init()
 
 function change_size()
 {
-    query_all_raw(".pair_card");
-    query_all_raw(".card_mem");
+    query_all(".pair_card", q=>q.style.width = `${100/(card_num/2)}%`);
+    query_all(".card_mem", q=>q.style.width = `${100/(card_num_mem/2)}%`);
 }
 
 
@@ -97,6 +96,7 @@ function pair_start()
         query("#cards").innerHTML += `<div class="pair_card"><img class="${pair_num + 1}" src="img/jatekok/hatter.png" alt="card"></div>`;
     }
     query_all(".pair_card>img", q=>q.onclick = click_card);
+    change_size();
 }
 
 function set_speed(speed)
@@ -243,6 +243,7 @@ function start_mem()
         get_find_card();
         query_all(".card_mem>img", q=>q.onclick = click_card_mem);
     }, turn_speed_mem);
+    change_size();
 }
 
 function get_find_card()
