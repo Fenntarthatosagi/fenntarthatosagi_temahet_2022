@@ -148,12 +148,32 @@ function init() {
             megjelenit(index);
             console.log("mi a kep elérési útja");
             ID("leiras").innerHTML = "<p> " + kepektomb[index].leiras + "<ul><li>Nem: " + kepektomb[index].sex + "</li><li>A tervezés fázisai:" + kepektomb[index].tervfaz + "</li></ul<p>";
-
+            var aktKep = index;
         });
     }
 
 }
-var aktKep = 0;
+const zerowasteTomb = [];
+
+function beolvas(tomb) {
+    fetch("kepgaleria.json")
+        .then(valasz => valasz.json())
+        .then(adat => {
+            console.log(adat) //ez az objektum
+                //a lepkék adatait beteszem a tömbbe
+                //bejárjuk a json fájlba lévő tömbböt
+            console.log(adat.zerowaste); //ez a tömb
+
+            //minden elemét betesszük a tömbbe
+            adat.zerowaste.forEach(lepke => {
+                console.log(lepke);
+                zerowasteTomb.push(lepke);
+            });
+
+
+        })
+        .catch(err => { console.log(err) });
+}
 
 function balra() {
     aktKep--;

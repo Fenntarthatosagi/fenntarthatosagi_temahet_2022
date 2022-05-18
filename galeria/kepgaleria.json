@@ -1,221 +1,333 @@
 {
     "zerowaste": [{
-        "kepEleresiut": "ruhakepek/organic.jpg",
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/arokszallasi/1.jpg",
         "cim": "lol",
-        "keszitette": "Alig Elek1",
-        "sex": "1unisex",
-        "leiras": "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad velit hic aliquid quidem sapiente suscipit esse quibusdam eaque accusantium, recusandae libero amet similique blanditiis sit magni autem. Placeat, facere dicta? Repellat inventoreveritatis non repellendus iste ea saepe ullam sint ab totam, velit maiores eius obcaecati unde at doloribus earum laudantium dignissimos aperiam quod numquam architecto facere ? Exercitationem, eaque accusantium.",
-        "tervfaz": "1varázslat"
+        "keszitette": "Árokszállási Renáta Andrea",
+        "bemutatja": "Árokszállási Renáta Andrea",
+        "leiras": "A ruhát a nyári strandszezonra terveztem, formáját tekintve egyszerű, fürdőruha fölé felvehető lenge ruha. Az anyagmaradékból pedig fejkendő készült a Nap erős sugárzása ellen. A ruha Árokszállási Renáta munkája."
 
     }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/arokszallasi/2.jpg",
         "cim": "lol",
-        "keszitette": "Alig Elek2",
-        "sex": "2unisex",
-        "leiras": "2lorem ipsum",
-        "tervfaz": "varázslat"
+        "keszitette": "Árokszállási Renáta Andrea",
+        "bemutatja": "Árokszállási Renáta Andrea",
+        "leiras": "A ruhát a nyári strandszezonra terveztem, formáját tekintve egyszerű, fürdőruha fölé felvehető lenge ruha. Az anyagmaradékból pedig fejkendő készült a Nap erős sugárzása ellen. A ruha Árokszállási Renáta munkája."
 
     }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
-        "ci": "lol",
-        "keszitett": "Alig Elek3",
-        "se": "3unisex",
-        "leira": "3lorem ipsum",
-        "tervfa": "varázslat"
-
-    }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/arokszallasi/3.jpg",
         "cim": "lol",
-        "keszitette": "Alig Elek1",
-        "sex": "1unisex",
-        "leiras": "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad velit hic aliquid quidem sapiente suscipit esse quibusdam eaque accusantium, recusandae libero amet similique blanditiis sit magni autem. Placeat, facere dicta? Repellat inventoreveritatis non repellendus iste ea saepe ullam sint ab totam, velit maiores eius obcaecati unde at doloribus earum laudantium dignissimos aperiam quod numquam architecto facere ? Exercitationem, eaque accusantium.",
-        "tervfaz": "1varázslat"
+        "keszitette": "Árokszállási Renáta Andrea",
+        "bemutatja": "Árokszállási Renáta Andrea",
+        "leiras": "A ruhát a nyári strandszezonra terveztem, formáját tekintve egyszerű, fürdőruha fölé felvehető lenge ruha. Az anyagmaradékból pedig fejkendő készült a Nap erős sugárzása ellen. A ruha Árokszállási Renáta munkája."
 
     }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/bajusz/1.jpg",
         "cim": "lol",
-        "keszitette": "Alig Elek2",
-        "sex": "2unisex",
-        "leiras": "2lorem ipsum",
-        "tervfaz": "varázslat"
+        "keszitette": "Bajusz Gyöngyike",
+        "bemutatja": "Bajusz Gyöngyike",
+        "leiras": "Bajusz Gyöngyike ruhájánál fontos szempont volt, hogy a megvarrásánál egyáltalán ne keletkezzen hulladék. Az anyag téglalapokra lett szétvágva, amiből egy elegáns és könnyed nyári ruha készült."
 
     }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
-        "ci": "lol",
-        "keszitett": "Alig Elek3",
-        "se": "3unisex",
-        "leira": "3lorem ipsum",
-        "tervfa": "varázslat"
-
-    }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/bajusz/3.jpg",
         "cim": "lol",
-        "keszitette": "Alig Elek1",
-        "sex": "1unisex",
-        "leiras": "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad velit hic aliquid quidem sapiente suscipit esse quibusdam eaque accusantium, recusandae libero amet similique blanditiis sit magni autem. Placeat, facere dicta? Repellat inventoreveritatis non repellendus iste ea saepe ullam sint ab totam, velit maiores eius obcaecati unde at doloribus earum laudantium dignissimos aperiam quod numquam architecto facere ? Exercitationem, eaque accusantium.",
-        "tervfaz": "1varázslat"
+        "keszitette": "Bajusz Gyöngyike",
+        "bemutatja": "Bajusz Gyöngyike",
+        "leiras": "Bajusz Gyöngyike ruhájánál fontos szempont volt, hogy a megvarrásánál egyáltalán ne keletkezzen hulladék. Az anyag téglalapokra lett szétvágva, amiből egy elegáns és könnyed nyári ruha készült."
 
     }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/bajusz/5.jpg",
         "cim": "lol",
-        "keszitette": "Alig Elek2",
-        "sex": "2unisex",
-        "leiras": "2lorem ipsum",
-        "tervfaz": "varázslat"
+        "keszitette": "Bajusz Gyöngyike",
+        "bemutatja": "Bajusz Gyöngyike",
+        "leiras": "Bajusz Gyöngyike ruhájánál fontos szempont volt, hogy a megvarrásánál egyáltalán ne keletkezzen hulladék. Az anyag téglalapokra lett szétvágva, amiből egy elegáns és könnyed nyári ruha készült."
 
     }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
-        "ci": "lol",
-        "keszitett": "Alig Elek3",
-        "se": "3unisex",
-        "leira": "3lorem ipsum",
-        "tervfa": "varázslat"
-
-    }],
-    "kreativitas": [{
-        "kepEleresiut": "ruhakepek/organic.jpg",
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/bartha/1.jpg",
         "cim": "lol",
-        "keszitette": "Alig Elek1",
-        "sex": "1unisex",
-        "leiras": "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad velit hic aliquid quidem sapiente suscipit esse quibusdam eaque accusantium, recusandae libero amet similique blanditiis sit magni autem. Placeat, facere dicta? Repellat inventoreveritatis non repellendus iste ea saepe ullam sint ab totam, velit maiores eius obcaecati unde at doloribus earum laudantium dignissimos aperiam quod numquam architecto facere ? Exercitationem, eaque accusantium.",
-        "tervfaz": "1varázslat"
+        "keszitett": "Bartha Emma Zsuzsanna",
+        "bemutatja": "Jeszenszky Luca",
+        "leira": "Bartha Emma ruhájának elkészítésekor az egyszerűség, és a hulladék nélkül való elkészíthetőség volt a fő szempont. Egyszerűen, egy téglalapból lett kiszabva a ruhadarab. A felső öltözet különlegessége, hogy többféleképpen hordható: a barna oldalával kifele fordítva, de a mintással is egyaránt. Ezen kívül, mivel vállainál cipzár fut, 90 fokkal elfordítva és szétcipzározva is viselhető."
 
     }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/bartha/2.jpg",
         "cim": "lol",
-        "keszitette": "Alig Elek2",
-        "sex": "2unisex",
-        "leiras": "2lorem ipsum",
-        "tervfaz": "varázslat"
+        "keszitett": "Bartha Emma Zsuzsanna",
+        "bemutatja": "Jeszenszky Luca",
+        "leira": "Bartha Emma ruhájának elkészítésekor az egyszerűség, és a hulladék nélkül való elkészíthetőség volt a fő szempont. Egyszerűen, egy téglalapból lett kiszabva a ruhadarab. A felső öltözet különlegessége, hogy többféleképpen hordható: a barna oldalával kifele fordítva, de a mintással is egyaránt. Ezen kívül, mivel vállainál cipzár fut, 90 fokkal elfordítva és szétcipzározva is viselhető."
 
     }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
-        "ci": "lol",
-        "keszitett": "Alig Elek3",
-        "se": "3unisex",
-        "leira": "3lorem ipsum",
-        "tervfa": "varázslat"
-
-    }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/berecz/1.jpg",
         "cim": "lol",
-        "keszitette": "Alig Elek1",
-        "sex": "1unisex",
-        "leiras": "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad velit hic aliquid quidem sapiente suscipit esse quibusdam eaque accusantium, recusandae libero amet similique blanditiis sit magni autem. Placeat, facere dicta? Repellat inventoreveritatis non repellendus iste ea saepe ullam sint ab totam, velit maiores eius obcaecati unde at doloribus earum laudantium dignissimos aperiam quod numquam architecto facere ? Exercitationem, eaque accusantium.",
-        "tervfaz": "1varázslat"
+        "keszitette": "Berecz Lili Blanka",
+        "bemutatja": "Berecz Lili Blanka",
+        "leiras": "Berecz Lili ruhája a természet jelenlétét varázsolja körénk, s a modell mozgása teszi igazán élővé, lélegzővé. A díszek korábbról, más projektekből megmaradt darabokból, nyesedékekből készültek. Virágokká komponálva őket, kaptak lehetőséget az újrakezdésre. Segítségükkel egy évek óta szekrényben szomorkodó ruha vált különlegesebbé."
 
     }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/berecz/2.jpg",
         "cim": "lol",
-        "keszitette": "Alig Elek2",
-        "sex": "2unisex",
-        "leiras": "2lorem ipsum",
-        "tervfaz": "varázslat"
+        "keszitette": "Berecz Lili Blanka",
+        "bemutatja": "Berecz Lili Blanka",
+        "leiras": "Berecz Lili ruhája a természet jelenlétét varázsolja körénk, s a modell mozgása teszi igazán élővé, lélegzővé. A díszek korábbról, más projektekből megmaradt darabokból, nyesedékekből készültek. Virágokká komponálva őket, kaptak lehetőséget az újrakezdésre. Segítségükkel egy évek óta szekrényben szomorkodó ruha vált különlegesebbé."
 
     }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
-        "ci": "lol",
-        "keszitett": "Alig Elek3",
-        "se": "3unisex",
-        "leira": "3lorem ipsum",
-        "tervfa": "varázslat"
-
-    }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/buzas/1.jpg",
         "cim": "lol",
-        "keszitette": "Alig Elek1",
-        "sex": "1unisex",
-        "leiras": "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad velit hic aliquid quidem sapiente suscipit esse quibusdam eaque accusantium, recusandae libero amet similique blanditiis sit magni autem. Placeat, facere dicta? Repellat inventoreveritatis non repellendus iste ea saepe ullam sint ab totam, velit maiores eius obcaecati unde at doloribus earum laudantium dignissimos aperiam quod numquam architecto facere ? Exercitationem, eaque accusantium.",
-        "tervfaz": "1varázslat"
+        "keszitette": "Buzás Vanda Szonja",
+        "bemutatja": "Buzás Vanda Szonja",
+        "leiras": "Buzás Vanda által megalkotott szett eredetileg egy félig elkészített ruha volt, amit Vanda teljesen szétbontott és újraalkotott. A felső díszítése lehulló darabokból készült, valamint az ujja is, így minden anyag gyakorlatilag szemét volt, amiből valami új keletkezett."
 
     }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/buzas/2.jpg",
         "cim": "lol",
-        "keszitette": "Alig Elek2",
-        "sex": "2unisex",
-        "leiras": "2lorem ipsum",
-        "tervfaz": "varázslat"
+        "keszitette": "Buzás Vanda Szonja",
+        "bemutatja": "Buzás Vanda Szonja",
+        "leiras": "Buzás Vanda által megalkotott szett eredetileg egy félig elkészített ruha volt, amit Vanda teljesen szétbontott és újraalkotott. A felső díszítése lehulló darabokból készült, valamint az ujja is, így minden anyag gyakorlatilag szemét volt, amiből valami új keletkezett."
 
     }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
-        "ci": "lol",
-        "keszitett": "Alig Elek3",
-        "se": "3unisex",
-        "leira": "3lorem ipsum",
-        "tervfa": "varázslat"
-
-    }],
-    "divbemutato": [{
-        "kepEleresiut": "ruhakepek/organic.jpg",
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/buzas/3.jpg",
         "cim": "lol",
-        "keszitette": "Alig Elek1",
-        "sex": "1unisex",
-        "leiras": "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad velit hic aliquid quidem sapiente suscipit esse quibusdam eaque accusantium, recusandae libero amet similique blanditiis sit magni autem. Placeat, facere dicta? Repellat inventoreveritatis non repellendus iste ea saepe ullam sint ab totam, velit maiores eius obcaecati unde at doloribus earum laudantium dignissimos aperiam quod numquam architecto facere ? Exercitationem, eaque accusantium.",
-        "tervfaz": "1varázslat"
+        "keszitette": "Buzás Vanda Szonja",
+        "bemutatja": "Buzás Vanda Szonja",
+        "leiras": "Buzás Vanda által megalkotott szett eredetileg egy félig elkészített ruha volt, amit Vanda teljesen szétbontott és újraalkotott. A felső díszítése lehulló darabokból készült, valamint az ujja is, így minden anyag gyakorlatilag szemét volt, amiből valami új keletkezett."
 
     }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/fabian/1.jpg",
         "cim": "lol",
-        "keszitette": "Alig Elek2",
-        "sex": "2unisex",
-        "leiras": "2lorem ipsum",
-        "tervfaz": "varázslat"
+        "keszitette": "Fábián Fanni",
+        "bemutatja": "Ádámszki Zsuzsanna",
+        "leiras": "Fábián Fanni modellje egy vászonból készült ruha, melyben egy körszoknya és egy egyszerű fűzős felsőrész kapcsolódik egymáshoz."
 
     }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
-        "ci": "lol",
-        "keszitett": "Alig Elek3",
-        "se": "3unisex",
-        "leira": "3lorem ipsum",
-        "tervfa": "varázslat"
-
-    }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/fabian/2.jpg",
         "cim": "lol",
-        "keszitette": "Alig Elek1",
-        "sex": "1unisex",
-        "leiras": "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad velit hic aliquid quidem sapiente suscipit esse quibusdam eaque accusantium, recusandae libero amet similique blanditiis sit magni autem. Placeat, facere dicta? Repellat inventoreveritatis non repellendus iste ea saepe ullam sint ab totam, velit maiores eius obcaecati unde at doloribus earum laudantium dignissimos aperiam quod numquam architecto facere ? Exercitationem, eaque accusantium.",
-        "tervfaz": "1varázslat"
+        "keszitette": "Fábián Fanni",
+        "bemutatja": "Ádámszki Zsuzsanna",
+        "leiras": "Fábián Fanni modellje egy vászonból készült ruha, melyben egy körszoknya és egy egyszerű fűzős felsőrész kapcsolódik egymáshoz."
 
     }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/fabian/3.jpg",
         "cim": "lol",
-        "keszitette": "Alig Elek2",
-        "sex": "2unisex",
-        "leiras": "2lorem ipsum",
-        "tervfaz": "varázslat"
+        "keszitette": "Fábián Fanni",
+        "bemutatja": "Ádámszki Zsuzsanna",
+        "leiras": "Fábián Fanni modellje egy vászonból készült ruha, melyben egy körszoknya és egy egyszerű fűzős felsőrész kapcsolódik egymáshoz."
 
     }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
-        "ci": "lol",
-        "keszitett": "Alig Elek3",
-        "se": "3unisex",
-        "leira": "3lorem ipsum",
-        "tervfa": "varázslat"
-
-    }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/fazekas/1.jpg",
         "cim": "lol",
-        "keszitette": "Alig Elek1",
-        "sex": "1unisex",
-        "leiras": "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad velit hic aliquid quidem sapiente suscipit esse quibusdam eaque accusantium, recusandae libero amet similique blanditiis sit magni autem. Placeat, facere dicta? Repellat inventoreveritatis non repellendus iste ea saepe ullam sint ab totam, velit maiores eius obcaecati unde at doloribus earum laudantium dignissimos aperiam quod numquam architecto facere ? Exercitationem, eaque accusantium.",
-        "tervfaz": "1varázslat"
+        "keszitette": "Fazekas Anna",
+        "bemutatja": "Fazekas Anna",
+        "leiras": "Fazekas Anna különböző színű geometriai formák használatával színes, érdekes öltözéket hozott létre. Ezek a formák jelennek meg a  felsőn és a nadrágon is, ezzel valami újat és egyedit megalkotva, de mégis felhasználva a régit."
 
     }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/fazekas/2.jpg",
         "cim": "lol",
-        "keszitette": "Alig Elek2",
-        "sex": "2unisex",
-        "leiras": "2lorem ipsum",
-        "tervfaz": "varázslat"
+        "keszitette": "Fazekas Anna",
+        "bemutatja": "Fazekas Anna",
+        "leiras": "Fazekas Anna különböző színű geometriai formák használatával színes, érdekes öltözéket hozott létre. Ezek a formák jelennek meg a  felsőn és a nadrágon is, ezzel valami újat és egyedit megalkotva, de mégis felhasználva a régit."
 
     }, {
-        "kepEleresiut": "ruhakepek/organic.jpg",
-        "ci": "lol",
-        "keszitett": "Alig Elek3",
-        "se": "3unisex",
-        "leira": "3lorem ipsum",
-        "tervfa": "varázslat"
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/fazekas/3.jpg",
+        "cim": "lol",
+        "keszitette": "Fazekas Anna",
+        "bemutatja": "Fazekas Anna",
+        "leiras": "Fazekas Anna különböző színű geometriai formák használatával színes, érdekes öltözéket hozott létre. Ezek a formák jelennek meg a  felsőn és a nadrágon is, ezzel valami újat és egyedit megalkotva, de mégis felhasználva a régit."
 
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/fazekas/4.jpg",
+        "cim": "lol",
+        "keszitette": "Fazekas Anna",
+        "bemutatja": "Fazekas Anna",
+        "leiras": "Fazekas Anna különböző színű geometriai formák használatával színes, érdekes öltözéket hozott létre. Ezek a formák jelennek meg a  felsőn és a nadrágon is, ezzel valami újat és egyedit megalkotva, de mégis felhasználva a régit."
+
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/fodi/1.jpg",
+        "cim": "lol",
+        "keszitette": "Fódi Martin Levente",
+        "bemutatja": "Heilman Petra",
+        "leiras": "A tervező, Fódi Martin a ruhán keresztül,  mint egy retro-futurisztikus elemekből álló festővásznon, utópisztikus  jövőképét tárja elénk."
+
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/hoffmann/1.jpg",
+        "cim": "lol",
+        "keszitette": "Hoffmann Dóra",
+        "bemutatja": "Horváth Dorina",
+        "leiras": "A tervező, Hoffmann Dóra a zero waste irányt követve a megújulás, letisztultság vonalát kísérte végig a tervezésben és a kivitelezésben. A kibontakozó geometrikus formavilág és az egyhangú, sötét természet adta földszín tökéletes ellentétet nyújt a térmészet és a mesterséges világ között."
+
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/hoffmann/2.jpg",
+        "cim": "lol",
+        "keszitette": "Hoffmann Dóra",
+        "bemutatja": "Horváth Dorina",
+        "leiras": "A tervező, Hoffmann Dóra a zero waste irányt követve a megújulás, letisztultság vonalát kísérte végig a tervezésben és a kivitelezésben. A kibontakozó geometrikus formavilág és az egyhangú, sötét természet adta földszín tökéletes ellentétet nyújt a térmészet és a mesterséges világ között."
+
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/hoffmann/3.jpg",
+        "cim": "lol",
+        "keszitette": "Hoffmann Dóra",
+        "bemutatja": "Horváth Dorina",
+        "leiras": "A tervező, Hoffmann Dóra a zero waste irányt követve a megújulás, letisztultság vonalát kísérte végig a tervezésben és a kivitelezésben. A kibontakozó geometrikus formavilág és az egyhangú, sötét természet adta földszín tökéletes ellentétet nyújt a térmészet és a mesterséges világ között."
+
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/juhasz/1.jpg",
+        "cim": "lol",
+        "keszitette": "Juhász Nóra",
+        "bemutatja": "Juhász Nóra",
+        "leiras": "Juhász Nóra ruhája különböző méretű tèglalapokból lett összevarva. Inspirációs tèmaként az èpületek ès a futónövènyek szolgáltak."
+
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/juhasz/2.jpg",
+        "cim": "lol",
+        "keszitette": "Juhász Nóra",
+        "bemutatja": "Juhász Nóra",
+        "leiras": "Juhász Nóra ruhája különböző méretű tèglalapokból lett összevarva. Inspirációs tèmaként az èpületek ès a futónövènyek szolgáltak."
+
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/juhasz/3.jpg",
+        "cim": "lol",
+        "keszitette": "Juhász Nóra",
+        "bemutatja": "Juhász Nóra",
+        "leiras": "Juhász Nóra ruhája különböző méretű tèglalapokból lett összevarva. Inspirációs tèmaként az èpületek ès a futónövènyek szolgáltak."
+
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/kertesz/1.jpg",
+        "cim": "lol",
+        "keszitette": "Kertész Krisztina",
+        "bemutatja": "Kertész Krisztina",
+        "leiras": "Számomra a környezetvédelem egyik fontos eleme mentén képzeltem el a nullahulladékos ruhát, miszerint már meglévő, de nem hordott ruhadarabomat alakítottam át egy leheletnyit.  - Kertész Krisztina, a tervező"
+
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/kertesz/2.jpg",
+        "cim": "lol",
+        "keszitette": "Kertész Krisztina",
+        "bemutatja": "Kertész Krisztina",
+        "leiras": "Számomra a környezetvédelem egyik fontos eleme mentén képzeltem el a nullahulladékos ruhát, miszerint már meglévő, de nem hordott ruhadarabomat alakítottam át egy leheletnyit.  - Kertész Krisztina, a tervező"
+
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/kertesz/3.jpg",
+        "cim": "lol",
+        "keszitette": "Kertész Krisztina",
+        "bemutatja": "Kertész Krisztina",
+        "leiras": "Számomra a környezetvédelem egyik fontos eleme mentén képzeltem el a nullahulladékos ruhát, miszerint már meglévő, de nem hordott ruhadarabomat alakítottam át egy leheletnyit.  - Kertész Krisztina, a tervező"
+
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/kertesz/4.jpg",
+        "cim": "lol",
+        "keszitette": "Kertész Krisztina",
+        "bemutatja": "Kertész Krisztina",
+        "leiras": "Számomra a környezetvédelem egyik fontos eleme mentén képzeltem el a nullahulladékos ruhát, miszerint már meglévő, de nem hordott ruhadarabomat alakítottam át egy leheletnyit.  - Kertész Krisztina, a tervező"
+
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/meszaros/1.jpg",
+        "cim": "lol",
+        "keszitette": "Mészáros Mercédesz Beatrix",
+        "bemutatja": "Lövei Lejla",
+        "leiras": "Ezt a könnyed esésű szatén ruhát a  hozzáillő ujjatlan kabáttal Mészáros Mercédesz tervezte. Ideális viselet rendezvényekre és munkába is, magassarkúval párosítva."
+
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/meszaros/2.jpg",
+        "cim": "lol",
+        "keszitette": "Mészáros Mercédesz Beatrix",
+        "bemutatja": "Lövei Lejla",
+        "leiras": "Ezt a könnyed esésű szatén ruhát a  hozzáillő ujjatlan kabáttal Mészáros Mercédesz tervezte. Ideális viselet rendezvényekre és munkába is, magassarkúval párosítva."
+
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/nagydominika/1.jpg",
+        "cim": "lol",
+        "keszitette": "Nagy Dominika Anna",
+        "bemutatja": "Nagy Dominika Anna",
+        "leiras": "Nagy Dominika által tervezett ruhánál  a szabásminták helyes, átgondolt elrendezése által nem keletkezett hulladék. A ruha csupán egy körből és körcikkekből lett  összeállítva, a fazonja, stílusa a középkor divatját gondolja újra."
+
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/nagydominika/2.jpg",
+        "cim": "lol",
+        "keszitette": "Nagy Dominika Anna",
+        "bemutatja": "Nagy Dominika Anna",
+        "leiras": "Nagy Dominika által tervezett ruhánál  a szabásminták helyes, átgondolt elrendezése által nem keletkezett hulladék. A ruha csupán egy körből és körcikkekből lett  összeállítva, a fazonja, stílusa a középkor divatját gondolja újra."
+
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/nagydominika/3.jpg",
+        "cim": "lol",
+        "keszitette": "Nagy Dominika Anna",
+        "bemutatja": "Nagy Dominika Anna",
+        "leiras": "Nagy Dominika által tervezett ruhánál  a szabásminták helyes, átgondolt elrendezése által nem keletkezett hulladék. A ruha csupán egy körből és körcikkekből lett  összeállítva, a fazonja, stílusa a középkor divatját gondolja újra."
+
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/nagyflora/2.jpg",
+        "cim": "lol",
+        "keszitette": "Nagy Flóra",
+        "bemutatja": "Nagy Flóra",
+        "leiras": ""
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/nagyflora/4.jpg",
+        "cim": "lol",
+        "keszitette": "Nagy Flóra",
+        "bemutatja": "Nagy Flóra",
+        "leiras": ""
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/nagyflora/6.jpg",
+        "cim": "lol",
+        "keszitette": "Nagy Flóra",
+        "bemutatja": "Nagy Flóra",
+        "leiras": ""
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/nagyhanna/8.jpg",
+        "cim": "lol",
+        "keszitette": "Nagy Hanna Napsugár",
+        "bemutatja": "Nagy Hanna Napsugár",
+        "leiras": "Nagy Hanna Napsugár által tervezett ruha célja az volt,hogy kényelmes legyen és könnyen lehessen benne mozogni, így akár fellépésekre is lehessen használni."
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/nagyhanna/19.jpg",
+        "cim": "lol",
+        "keszitette": "Nagy Hanna Napsugár",
+        "bemutatja": "Nagy Hanna Napsugár",
+        "leiras": "Nagy Hanna Napsugár által tervezett ruha célja az volt,hogy kényelmes legyen és könnyen lehessen benne mozogni, így akár fellépésekre is lehessen használni."
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/nagyhanna/13.jpg",
+        "cim": "lol",
+        "keszitette": "Nagy Hanna Napsugár",
+        "bemutatja": "Nagy Hanna Napsugár",
+        "leiras": "Nagy Hanna Napsugár által tervezett ruha célja az volt,hogy kényelmes legyen és könnyen lehessen benne mozogni, így akár fellépésekre is lehessen használni."
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/novak/2.jpg",
+        "cim": "lol",
+        "keszitette": "Novák Nóra",
+        "bemutatja": "Sárácz Tijáná",
+        "leiras": "Viharkabát /upcycling esőkabát/ A műanyag oldhatatlansága, le nem bomlósága tökéletesen párhuzamba állítható a dohánytermékek rendszeres használatával. Mindkét esetben az ember a fogyasztó ki a testét és a földjét is szennyezi. A műanyag lebomlása több száz évbe telik, a kátrány a tüdőben lerakódva akár évek múltán is kimutatható. Novák Nóra munkája."
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/novak/9.jpg",
+        "cim": "lol",
+        "keszitette": "Novák Nóra",
+        "bemutatja": "Sárácz Tijáná",
+        "leiras": "Viharkabát /upcycling esőkabát/ A műanyag oldhatatlansága, le nem bomlósága tökéletesen párhuzamba állítható a dohánytermékek rendszeres használatával. Mindkét esetben az ember a fogyasztó ki a testét és a földjét is szennyezi. A műanyag lebomlása több száz évbe telik, a kátrány a tüdőben lerakódva akár évek múltán is kimutatható. Novák Nóra munkája."
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/novak/6.jpg",
+        "cim": "lol",
+        "keszitette": "Novák Nóra",
+        "bemutatja": "Sárácz Tijáná",
+        "leiras": "Viharkabát /upcycling esőkabát/ A műanyag oldhatatlansága, le nem bomlósága tökéletesen párhuzamba állítható a dohánytermékek rendszeres használatával. Mindkét esetben az ember a fogyasztó ki a testét és a földjét is szennyezi. A műanyag lebomlása több száz évbe telik, a kátrány a tüdőben lerakódva akár évek múltán is kimutatható. Novák Nóra munkája."
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/szoboszlai/18.jpg",
+        "cim": "lol",
+        "keszitette": "Szoboszlai Bella",
+        "bemutatja": "Szoboszlai Bella",
+        "leiras": "Az élénk színek es merész szabásvonalak az élet változatosságát és lendületességet tükrözik. Az öltözék Szoboszali Bella munkája."
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/szoboszlai/19.jpg",
+        "cim": "lol",
+        "keszitette": "Szoboszlai Bella",
+        "bemutatja": "Szoboszlai Bella",
+        "leiras": "Az élénk színek es merész szabásvonalak az élet változatosságát és lendületességet tükrözik. Az öltözék Szoboszali Bella munkája."
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/szoboszlai/10.jpg",
+        "cim": "lol",
+        "keszitette": "Szoboszlai Bella",
+        "bemutatja": "Szoboszlai Bella",
+        "leiras": "Az élénk színek es merész szabásvonalak az élet változatosságát és lendületességet tükrözik. Az öltözék Szoboszali Bella munkája."
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/szoboszlai/18.jpg",
+        "cim": "lol",
+        "keszitette": "Szórád Nikolett",
+        "bemutatja": "Szoboszlai Bella",
+        "leiras": "Az élénk színek es merész szabásvonalak az élet változatosságát és lendületességet tükrözik. Az öltözék Szoboszali Bella munkája."
     }]
 }
