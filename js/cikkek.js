@@ -77,7 +77,9 @@ function feldolgoz() {
 }
 
 window.addEventListener("click", megjelenit);
-function megjelenit(){
+function megjelenit(
+  
+){
   
 }
 
