@@ -168,7 +168,7 @@ header {
 }
 
 .sidebar-list-item:hover {
-    background-color: var(--lightest-gray);
+    background-color: var(--light-gray);
 }
 
 .sidebar.open {
@@ -258,8 +258,4 @@ main>button {
 
 footer {
     text-align: center;
-}
-
-li a:hover {
-    background-color: lightblue;
 }
