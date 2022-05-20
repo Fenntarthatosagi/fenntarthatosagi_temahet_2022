@@ -9,7 +9,6 @@ function $2(elem) {
   return document.querySelectorAll(elem);
 }
 
-let cikkek = [];
 function init() {
   beolvas("SzandiCikk");
   beolvas("VZSCikk");
@@ -24,7 +23,7 @@ function init() {
 }
 
 function beolvas(kulcs) {
-  cikkek = [];
+  let cikkek = [];
   fetch("cikkek.json")
     .then((response) => response.json())
     .then((data) => {
@@ -35,14 +34,14 @@ function beolvas(kulcs) {
         cikkek.push(elem);
       });
       // console.log(cikkek);
-      feldolgoz();
+      feldolgoz(cikkek);
     })
     .catch((err) => {
       console.log(err);
     });
 }
 
-function feldolgoz() {
+function feldolgoz(cikkek) {
   let txt = "";
   txt += "<div>";
   cikkek.forEach(function (cikk, index) {
