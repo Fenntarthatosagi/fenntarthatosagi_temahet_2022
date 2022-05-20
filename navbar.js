@@ -7,9 +7,6 @@ function query(name) {
 const menuIconButton = document.querySelector("[data-menu-icon-btn]")
 const sidebar = document.querySelector("[data-sidebar]")
 
-var github_mode = false;
-var github_link = "fenntarthatosagi_temahet_2022/";
-
 function init()
 {
     //menu button
@@ -17,24 +14,22 @@ function init()
         sidebar.classList.toggle("open")
     })
 
-    fetch("/galeria")
-    .then((response) => response.text())
-    .then((data) => {
-        github_mode = false;
-        console.log(data);
-        make_nav();
-    })
-    .catch((err) => {
-        github_mode = true;
-        console.log(err);
-        make_nav();
-    });
+    //get if on gihub
+    let get_if_git = new XMLHttpRequest();
+    get_if_git.open("get", `/`, true);
+    get_if_git.onload = function()
+    {
+        if (get_if_git.readyState == 4)
+            make_nav(get_if_git.status != 200);
+    }
+    get_if_git.send();
 }
 
-
-function make_nav()
+function make_nav(github_mode=true)
 {
-    console.log(github_mode);
+    let github_link = "fenntarthatosagi_temahet_2022/";
+
+    console.log((github_mode ? "github pages" : "normal") + " nav");
     query("nav").innerHTML = `
     <!-- kezdőlap -->
     <div class="top-sidebar">
