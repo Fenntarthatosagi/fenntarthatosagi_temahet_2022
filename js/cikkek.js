@@ -75,7 +75,7 @@ function feldolgoz() {
   $1("#container").innerHTML += txt;
   $2("#container > div").forEach(element => {
     element.addEventListener("click", function () {
-      let tartalom = event.currentTarget.innerHTML //event target azaz elem amire kattintunk, innerHTML a belső tartalma
+      let tartalom = event.currentTarget.innerHTML
       console.log(tartalom);
       modal.style.display = "block";
     })
@@ -87,7 +87,7 @@ function feldolgoz() {
   // Get the button that opens the modal
   $2("#container > div").forEach(element => {
     element.addEventListener("click", function () {
-      let tartalom = event.currentTarget.innerHTML //event target azaz elem amire kattintunk, innerHTML a belső tartalma
+      let tartalom = event.currentTarget.innerHTML
       console.log(tartalom);
       ID("cikk").innerHTML = tartalom;
       modal.style.display = "block";
