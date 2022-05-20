@@ -72,7 +72,7 @@ function feldolgoz() {
 
   });
   txt += "</div>";
-  $2("#container")[0].innerHTML += txt;
+  $1("#container").innerHTML += txt;
   $2("#container > div").forEach(element => {
     element.addEventListener("click", function () {
       let tartalom = event.currentTarget.innerHTML //event target azaz elem amire kattintunk, innerHTML a belső tartalma
