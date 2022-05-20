@@ -55,7 +55,7 @@ function feldolgoz(cikkek) {
       if (key.includes("kep")) {
         txt += "<img src='" + cikk[key] + "' alt=''></img>";
       }
-      if (key.includes("bekezdes") >= 0) {
+      if (key.includes("bekezdes")) {
         txt += "<p>" + cikk[key] + "</p>";
       }
       if (key.includes("alCim")) {
