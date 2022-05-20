@@ -16,7 +16,7 @@ function init()
 
     //get if on gihub
     let get_if_git = new XMLHttpRequest();
-    get_if_git.open("get", `/`, true);
+    get_if_git.open("get", "/", true);
     get_if_git.onload = function()
     {
         if (get_if_git.readyState == 4)
