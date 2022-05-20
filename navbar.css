@@ -171,6 +171,10 @@ header {
     background-color: var(--light-gray);
 }
 
+.sidebar-list .active-page {
+    background-color: var(--medium-gray);
+}
+
 .sidebar.open {
     width: 200px;
 }
