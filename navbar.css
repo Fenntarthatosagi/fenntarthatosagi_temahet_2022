@@ -12,7 +12,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
- :root {
+:root {
     --accent-color: rgb(204, 0, 0);
     --lightest-gray: rgb(244, 244, 244);
     --light-gray: rgb(144, 144, 144);
@@ -258,4 +258,8 @@ main>button {
 
 footer {
     text-align: center;
+}
+
+li a:hover {
+    background-color: lightblue;
 }
