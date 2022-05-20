@@ -14,11 +14,26 @@ function init()
         sidebar.classList.toggle("open")
     })
 
+    //get if on gihub
+    let get_if_git = new XMLHttpRequest();
+    get_if_git.open("get", "/", true);
+    get_if_git.onload = function()
+    {
+        if (get_if_git.readyState == 4)
+            make_nav(get_if_git.status != 200);
+    }
+    get_if_git.send();
+}
 
+function make_nav(github_mode=true)
+{
+    let github_link = "fenntarthatosagi_temahet_2022/";
+
+    console.log((github_mode ? "github pages" : "normal") + " nav");
     query("nav").innerHTML = `
     <!-- kezdőlap -->
     <div class="top-sidebar">
-        <a href="/index.html" class="channel-logo"><img src="https://img.icons8.com/glyph-neue/344/home.png" alt="Channel Logo" /></a>
+        <a href="/${github_mode ? github_link : ""}index.html" class="channel-logo"><img src="https://img.icons8.com/glyph-neue/344/home.png" alt="Channel Logo" /></a>
         <div class="hidden-sidebar your-channel">Kezdőlap</div>
         <div class="hidden-sidebar channel-name">Fenntarthatósági témahét</div>
     </div>
@@ -26,28 +41,28 @@ function init()
         <ul class="sidebar-list">
             <!-- cikkek -->
             <li class="sidebar-list-item sidebar-cikkek">
-                <a href="/cikkek.html" class="sidebar-link">
+                <a href="/${github_mode ? github_link : ""}cikkek.html" class="sidebar-link">
                     <img src="https://img.icons8.com/ios-filled/344/news.png" />
                     <div class="hidden-sidebar">Cikkek</div>
                 </a>
             </li>
             <!-- tesztek -->
             <li class="sidebar-list-item sidebar-tesztek">
-                <a href="/tesztek.html" class="sidebar-link">
+                <a href="/${github_mode ? github_link : ""}tesztek.html" class="sidebar-link">
                     <img src="https://img.icons8.com/ios-filled/344/survey.png" />
                     <div class="hidden-sidebar">Tesztek</div>
                 </a>
             </li>
             <!-- ruha bemutató -->
             <li class="sidebar-list-item sidebar-galeria">
-                <a href="/galeria/galeria.html" class="sidebar-link">
+                <a href="/${github_mode ? github_link : ""}galeria/galeria.html" class="sidebar-link">
                     <img src="https://img.icons8.com/ios-filled/344/dress-front-view.png" />
                     <div class="hidden-sidebar">Ruha bemutató</div>
                 </a>
             </li>
             <!-- játékok -->
             <li class="sidebar-list-item sidebar-jatekok">
-                <a href="/jatekok.html" class="sidebar-link">
+                <a href="/${github_mode ? github_link : ""}jatekok.html" class="sidebar-link">
                     <img src="https://img.icons8.com/ios-filled/344/controller.png" />
                     <div class="hidden-sidebar">Játékok</div>
                 </a>

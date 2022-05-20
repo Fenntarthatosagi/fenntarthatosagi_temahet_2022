@@ -65,7 +65,7 @@ function feldolgoz(cikkek) {
         txt += "<li>" + cikk[key] + "</li>";
       }
       if (key.includes("link")) {
-        txt += `<a href='${cikk[key]}'>LINK</a>`;
+        txt += `<a href="${cikk[key].replace("LINK:", "")}" target="_blank">LINK</a>`;
       }
     }
 
