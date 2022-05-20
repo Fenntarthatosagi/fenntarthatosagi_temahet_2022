@@ -210,41 +210,6 @@ header {
     width: 100%;
 }
 
-
-.arrow {
-    position: absolute;
-    width: 3vmin;
-    height: 3vmin;
-    background: transparent;
-    border-top: 1vmin solid black;
-    border-right: 1vmin solid black;
-    box-shadow: 0 0 0 var(--dark-gray);
-    transition: all 200ms ease;
-    margin-left: 100px;
-    margin-top: 30px;
-}
-
-.arrow.left {
-    left: 0;
-    transform: translate3d(0, -50%, 0) rotate(-135deg);
-}
-
-.arrow:hover {
-    border-color: coral;
-    box-shadow: 0.5vmin -0.5vmin 0 rgb(255, 172, 142);
-}
-
-.arrow:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-40%, -60%) rotate(45deg);
-    width: 200%;
-    height: 200%;
-}
-
-
 main>section {
     text-align: center;
     overflow: auto;
