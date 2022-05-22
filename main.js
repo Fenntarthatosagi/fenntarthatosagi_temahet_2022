@@ -1,24 +1,22 @@
 window.addEventListener("load", init);
 
-function querry(name) {
+function query(name) {
     return document.querySelector(name);
 }
 
-function querry_all_raw(name) {
+function query_all_raw(name) {
     return document.querySelectorAll(name);
 }
 
-function querry_all(name, arg) {
+function query_all(name, arg) {
     document.querySelectorAll(name).forEach(elem => { arg(elem) });
 }
 
 function init() {
     //load main elements
-    querry("nav").innerHTML += '<ul><li><a href="index.html">Kezdőoldal</a></li><li><a href="cikkek.html">Cikkek</a></li><li><a href="tesztek.html">Tesztek</a></li><li><a href="galeria/galeria.html">Ruha bemutató</a></li><li><a href="jatekok.html">Játékok</a></li></ul>';
-    querry("body").innerHTML += '';
-    querry("article").innerHTML += '<img src="">';
-    querry("aside").innerHTML += '';
-    querry("footer").innerHTML += '<p>Minden jog fenntartva ©</p>';
+    query("nav").innerHTML += '<ul><li><a href="index.html">Kezdőoldal</a></li><li><a href="cikkek.html">Cikkek</a></li><li><a href="tesztek.html">Tesztek</a></li><li><a href="galeria/galeria.html">Ruha bemutató</a></li><li><a href="jatekok.html">Játékok</a></li></ul>';
+    query("article").innerHTML += '<img src="">';
+    query("footer").innerHTML = "&copy; Minden jog fenntartva";
     fetch("ajanlo.json")
     .then((response) => response.json())
     .then((data) => {
@@ -56,5 +54,5 @@ function feldolgoz() {
       txt += "</div>";
     });
     console.log(txt);
-    querry("article").innerHTML = txt;
+    query("article").innerHTML = txt;
   }

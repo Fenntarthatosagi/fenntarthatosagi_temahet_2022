@@ -4,6 +4,10 @@ function ID(elem) {
     return document.getElementById(elem);
 }
 
+function query(name) {
+    return document.querySelector(name);
+}
+
 function $(elem) {
     return document.querySelectorAll(elem);
 }
@@ -114,6 +118,6 @@ function kepbetoltes() {
 }
 
 function megjelenit(index) {
-    ID("fokep").src = zerowasteTomb[index].kepEleresiut;
+    query("#fokep>img").src = zerowasteTomb[index].kepEleresiut;
     ID("cim").alt = zerowasteTomb[index].cim;
 }

@@ -1,4 +1,5 @@
 window.addEventListener("load", init);
+window.addEventListener("resize", change_size);
 
 //window.addEventListener("resize", change_size)
 
@@ -36,6 +37,7 @@ function init()
     query("#options").innerHTML += '<div id="speed"><p>Visszafordítási sebesség: </p></div>';
     //making field
     query("#pair_game>.main").innerHTML += '<div id="cards"></div>';
+    query("#cards").style.display = "none";
     //generating buttons
     amount_options.forEach(amount => {
         query("#card_num").innerHTML += `<button onclick="set_amount(${amount})">${amount} kártya</button>`;
@@ -55,6 +57,7 @@ function init()
     query("#options_mem").innerHTML += '<div id="card_num_mem"><p>Kártyaszám: </p></div>';
     //making field
     query("#memory_game>.main").innerHTML += '<div id="main_card_mem"></div><div id="cards_mem"></div>';
+    query("#cards_mem").style.display = "none";
     //generating buttons
     speed_options_mem.forEach(speed => {
         query("#speed_mem").innerHTML += `<button onclick="set_speed_mem(${speed})">${speed/1000} másodperc</button>`;
@@ -66,8 +69,16 @@ function init()
 
 function change_size()
 {
-    query_all(".pair_card", q=>q.style.width = `${100/(card_num/2)}%`);
-    query_all(".card_mem", q=>q.style.width = `${100/(card_num_mem/2)}%`);
+    if(window.screen.width >= 500)
+    {
+        query_all(".pair_card", q=>q.style.width = `${100/(card_num/4)}%`);
+        query_all(".card_mem", q=>q.style.width = `${100/(card_num_mem/2)}%`);
+    }
+    else
+    {
+        query_all(".pair_card", q=>q.style.width = `${100/(card_num/8)}%`);
+        query_all(".card_mem", q=>q.style.width = `${100/(card_num_mem/4)}%`);
+    }
 }
 
 
@@ -107,6 +118,7 @@ function set_amount(num)
 {
     card_num = num;
     query_all("#card_num>button", q=>q.disabled = true);
+    query("#cards").style.display = "flex";
     pair_start();
 }
 
@@ -147,6 +159,7 @@ function reset()
         card.onclick = click_card;
         found = 0;
         turned = 0;
+        query("#cards").style.display = "none";
         query("#cards").innerHTML = "";
         query_all("#card_num>button", q=>q.disabled = false);
     });
@@ -229,7 +242,7 @@ function start_mem()
         card_left_start[mem_card_num] = false;
         console.log(card_left_start);
         //making card
-        query("#cards_mem").innerHTML += `<div class="card_mem"><img class="${mem_card_num + 1}" src="img/jatekok/kep${mem_card_num + 1}.jpg" alt="card"></div>`;
+        query("#cards_mem").innerHTML += `<div class="card_mem"><img class="${mem_card_num + 1} peek" src="img/jatekok/kep${mem_card_num + 1}.jpg" alt="card"></div>`;
     }
     //get target
     for (let x = 0; x < card_num_mem; x++)
@@ -240,6 +253,7 @@ function start_mem()
         query_all(".card_mem>img", q=>q.src = "img/jatekok/hatter.png");
         query("#main_card_mem").innerHTML = `<h3>Találd meg ezt a kártyát<h3><div id="find_card"><img src="" alt="find this card"></div>`;
         get_find_card();
+        query_all(".card_mem>img", q=>q.classList.toggle("peek"));
         query_all(".card_mem>img", q=>q.onclick = click_card_mem);
     }, turn_speed_mem);
     change_size();
@@ -266,6 +280,7 @@ function set_amount_mem(num)
     card_num_mem = num;
     query_all("#speed_mem>button", q=>q.disabled = true);
     query_all("#card_num_mem>button", q=>q.disabled = true);
+    query("#cards_mem").style.display = "flex";
     start_mem();
 }
 
@@ -279,6 +294,7 @@ function reset_mem()
         turned_mem = 0;
         cards_left_mem = [];
         query("#cards_mem").innerHTML = "";
+        query("#cards_mem").style.display = "none";
         query("#main_card_mem").innerHTML = "";
         query_all("#speed_mem>button", q=>q.disabled = false);
         query_all("#card_num_mem>button", q=>q.disabled = false);

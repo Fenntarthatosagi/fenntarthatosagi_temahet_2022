@@ -102,7 +102,6 @@ section {
     text-align: center;
     color: #ccc;
     padding: 10px 0;
-    height: 150px;
 }
 
 
@@ -117,6 +116,16 @@ section {
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
     animation-duration: 0.6s;
+}
+
+#alkoto>h1 {
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+#fokep>img {
+    width: 30%;
+    min-width: 150px;
 }
 
 @-webkit-keyframes zoom {

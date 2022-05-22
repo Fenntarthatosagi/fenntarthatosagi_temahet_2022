@@ -219,16 +219,7 @@ main>section>* {
     margin-top: 10px;
 }
 
-main>button {
-    margin-top: 50px;
-    margin-left: 10px;
-    color: black;
-    background-color: transparent;
-    border: solid 1px black;
-    border-radius: 5px;
-    padding: 5px;
-}
-
 footer {
     text-align: center;
+    margin: 5px;
 }

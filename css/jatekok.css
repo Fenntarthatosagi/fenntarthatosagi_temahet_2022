@@ -60,6 +60,11 @@ article {
 .pair_card>img, .card_mem>img {
     width: 100%;
     margin: auto;
+    height: 100%;
+}
+
+.pair_turned, .turned_mem, .peek {
+    height: initial !important;
 }
 
 #options, #options_mem {

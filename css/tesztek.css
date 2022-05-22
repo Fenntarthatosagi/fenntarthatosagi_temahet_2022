@@ -26,6 +26,7 @@ article, aside {
 aside {
     padding: 5px;
     height: 100%;
+    background-color: darkgray;
 }
 
 #resoult {
@@ -44,13 +45,17 @@ aside {
     padding: 10px;
 }
 
+#test_alt, #test_koz, #test_fel {
+    background-color: darkgray;
+}
+
 .kerdes {
     margin: 5px;
 }
 
 .submit_button {
     color: black;
-    background-color: transparent;
+    background-color: white;
     border: solid 1px black;
     border-radius: 5px;
     padding: 5px;

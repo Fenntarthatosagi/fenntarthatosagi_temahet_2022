@@ -4,14 +4,23 @@ function query(name) {
     return document.querySelector(name);
 }
 
-const menuIconButton = document.querySelector("[data-menu-icon-btn]")
-const sidebar = document.querySelector("[data-sidebar]")
-
 function init()
 {
+    //make menu icon button
+    query("header").innerHTML = `
+        <button class="menu-icon-btn" data-menu-icon-btn>
+            <svg
+                viewbox="0 0 24 24"
+                preserveaspectratio="xMidYMid meet"
+                focusable="false"
+                class="menu-icon">
+                <g><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></g>
+            </svg>
+        </button>
+        <h3>#Fenntarthatóság2022</h3>`;
     //menu button
-    menuIconButton.addEventListener("click", () => {
-        sidebar.classList.toggle("open")
+    query("[data-menu-icon-btn]").addEventListener("click", () => {
+        query("[data-sidebar]").classList.toggle("open")
     })
 
     //get if on gihub
@@ -23,6 +32,8 @@ function init()
             make_nav(get_if_git.status != 200);
     }
     get_if_git.send();
+    //footer
+    query("footer").innerHTML = "&copy; Minden jog fenntartva";
 }
 
 function make_nav(github_mode=true)
