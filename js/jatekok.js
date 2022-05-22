@@ -1,4 +1,5 @@
 window.addEventListener("load", init);
+window.addEventListener("resize", change_size);
 
 //window.addEventListener("resize", change_size)
 
@@ -36,6 +37,7 @@ function init()
     query("#options").innerHTML += '<div id="speed"><p>Visszafordítási sebesség: </p></div>';
     //making field
     query("#pair_game>.main").innerHTML += '<div id="cards"></div>';
+    query("#cards").style.display = "none";
     //generating buttons
     amount_options.forEach(amount => {
         query("#card_num").innerHTML += `<button onclick="set_amount(${amount})">${amount} kártya</button>`;
@@ -55,6 +57,7 @@ function init()
     query("#options_mem").innerHTML += '<div id="card_num_mem"><p>Kártyaszám: </p></div>';
     //making field
     query("#memory_game>.main").innerHTML += '<div id="main_card_mem"></div><div id="cards_mem"></div>';
+    query("#cards_mem").style.display = "none";
     //generating buttons
     speed_options_mem.forEach(speed => {
         query("#speed_mem").innerHTML += `<button onclick="set_speed_mem(${speed})">${speed/1000} másodperc</button>`;
@@ -64,6 +67,19 @@ function init()
     });
 }
 
+function change_size()
+{
+    if(window.screen.width >= 500)
+    {
+        query_all(".pair_card", q=>q.style.width = `${100/(card_num/4)}%`);
+        query_all(".card_mem", q=>q.style.width = `${100/(card_num_mem/2)}%`);
+    }
+    else
+    {
+        query_all(".pair_card", q=>q.style.width = `${100/(card_num/8)}%`);
+        query_all(".card_mem", q=>q.style.width = `${100/(card_num_mem/4)}%`);
+    }
+}
 
 
 function pair_start()
@@ -90,6 +106,7 @@ function pair_start()
         query("#cards").innerHTML += `<div class="pair_card"><img class="${pair_num + 1}" src="img/jatekok/hatter.png" alt="card"></div>`;
     }
     query_all(".pair_card>img", q=>q.onclick = click_card);
+    change_size();
 }
 
 function set_speed(speed)
@@ -101,6 +118,7 @@ function set_amount(num)
 {
     card_num = num;
     query_all("#card_num>button", q=>q.disabled = true);
+    query("#cards").style.display = "flex";
     pair_start();
 }
 
@@ -141,6 +159,7 @@ function reset()
         card.onclick = click_card;
         found = 0;
         turned = 0;
+        query("#cards").style.display = "none";
         query("#cards").innerHTML = "";
         query_all("#card_num>button", q=>q.disabled = false);
     });
@@ -148,7 +167,7 @@ function reset()
 
 function click_card(evt)
 {
-    evt.target.src = `img/jatekok/kep${evt.target.className.replace("pair_done", "").replace(" ", "")}.png`;
+    evt.target.src = `img/jatekok/kep${evt.target.className.replace("pair_done", "").replace(" ", "")}.jpg`;
     evt.target.classList.add("pair_turned");
     evt.target.onclick = null;
     turned = (turned + 1) % 2;
@@ -193,7 +212,7 @@ function click_card(evt)
 // memory game
 
 const speed_options_mem = [0, 200, 500, 1000, 3000, 5000, 10000];
-const amount_options_mem = [4, 8, 12, 16, 32, 40];
+const amount_options_mem = [2, 4, 8, 12, 16, 20];
 
 var card_num_mem = 8;
 var turn_speed_mem = 3000;
@@ -223,7 +242,7 @@ function start_mem()
         card_left_start[mem_card_num] = false;
         console.log(card_left_start);
         //making card
-        query("#cards_mem").innerHTML += `<div class="card_mem"><img class="${mem_card_num + 1}" src="img/jatekok/kep${mem_card_num + 1}.png" alt="card"></div>`;
+        query("#cards_mem").innerHTML += `<div class="card_mem"><img class="${mem_card_num + 1} peek" src="img/jatekok/kep${mem_card_num + 1}.jpg" alt="card"></div>`;
     }
     //get target
     for (let x = 0; x < card_num_mem; x++)
@@ -234,8 +253,10 @@ function start_mem()
         query_all(".card_mem>img", q=>q.src = "img/jatekok/hatter.png");
         query("#main_card_mem").innerHTML = `<h3>Találd meg ezt a kártyát<h3><div id="find_card"><img src="" alt="find this card"></div>`;
         get_find_card();
+        query_all(".card_mem>img", q=>q.classList.toggle("peek"));
         query_all(".card_mem>img", q=>q.onclick = click_card_mem);
     }, turn_speed_mem);
+    change_size();
 }
 
 function get_find_card()
@@ -246,7 +267,7 @@ function get_find_card()
     } while (!cards_left_mem[find_card_num - 1]);
     console.log("Find: " + (find_card_num - 1));
     cards_left_mem[find_card_num - 1] = false;
-    query("#find_card>img").src = `img/jatekok/kep${find_card_num}.png`;
+    query("#find_card>img").src = `img/jatekok/kep${find_card_num}.jpg`;
 }
 
 function set_speed_mem(speed)
@@ -259,6 +280,7 @@ function set_amount_mem(num)
     card_num_mem = num;
     query_all("#speed_mem>button", q=>q.disabled = true);
     query_all("#card_num_mem>button", q=>q.disabled = true);
+    query("#cards_mem").style.display = "flex";
     start_mem();
 }
 
@@ -272,6 +294,7 @@ function reset_mem()
         turned_mem = 0;
         cards_left_mem = [];
         query("#cards_mem").innerHTML = "";
+        query("#cards_mem").style.display = "none";
         query("#main_card_mem").innerHTML = "";
         query_all("#speed_mem>button", q=>q.disabled = false);
         query_all("#card_num_mem>button", q=>q.disabled = false);
@@ -285,7 +308,7 @@ function click_card_mem(evt)
     console.log("Clicked: " + (card_number - 1));
     cards_left_mem[card_number - 1] = false;
     console.log(cards_left_mem);
-    evt.target.src = `img/jatekok/kep${card_number}.png`;
+    evt.target.src = `img/jatekok/kep${card_number}.jpg`;
     evt.target.classList.add("turned_mem");
     evt.target.onclick = null;
     turned_mem++;

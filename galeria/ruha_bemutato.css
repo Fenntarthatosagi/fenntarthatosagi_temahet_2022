@@ -7,7 +7,7 @@
 }
 
 #kepgaleria img {
-    max-width: 100%;
+    max-width: 80%;
 }
 
 body {
@@ -38,6 +38,7 @@ section {
 
 #zerokreativnemtudom img {
     width: 300px;
+    border-radius: 20px;
 }
 
 #zerokreativnemtudom {
@@ -51,6 +52,16 @@ section {
 
 #zerokreativnemtudom div {
     border: 1px solid black;
+    border-radius: 20px;
+}
+
+#zerokreativnemtudom a:link {
+    text-decoration: none;
+}
+
+#zerokreativnemtudom p {
+    color: black;
+    text-align: center;
 }
 
 
@@ -102,7 +113,6 @@ section {
     text-align: center;
     color: #ccc;
     padding: 10px 0;
-    height: 150px;
 }
 
 
@@ -117,6 +127,16 @@ section {
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
     animation-duration: 0.6s;
+}
+
+#alkoto>h1 {
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+#fokep>img {
+    width: 30%;
+    min-width: 150px;
 }
 
 @-webkit-keyframes zoom {
@@ -164,6 +184,19 @@ section {
     width: 50%;
 }
 
+.szoveg h1 {
+    text-align: center;
+}
+
+.szoveg h3 {
+    text-align: center;
+}
+
+#ok {
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
 
 /* 100% Image Width on Smaller Screens */
 
@@ -204,4 +237,20 @@ section {
     transform: translate(-40%, -60%) rotate(45deg);
     width: 200%;
     height: 200%;
+}
+
+@media only screen and (max-width: 800px) {
+    #kepgaleria {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #kepgaleria {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
 }

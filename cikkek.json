@@ -4,7 +4,7 @@
       "foCim": "Hulladék mentes vásárlás",
       "alCim": "Csomagolás nélküli vásárlás Magyarországon",
       "bekezdes": "Mára több mint 50 olyan bolt található Magyarországon, amelyben csomagolás nélkül tudunk vásárolni.  Ezekben a boltokba a vásárló saját üvegedényekkel, tárolóeszközökkel érkezik, és azokban tudja haza vinni a megvásárlandó termékeket. Ez nagyban elősegíti a hulladék termelés visszafogását.",
-      "kep": "adagolo.jpg"
+      "kep": "img/cikkek/adagolo.jpg"
     },
     {
       "alCim": "Magyar példakép",
@@ -13,18 +13,18 @@
     {
       "alCim": "Mit is találhatunk egy ilyen boltban?",
       "bekezdes": "Ezen üzletek általában bio, vegyszerektől mentes, kisüzemben gyártott hazai élelmiszereket árulnak, így számolni kell azzal, hogy a termékek valamivel drágábbak lesznek a megszokottnál. Az élelmiszer mellett számos boltban találkozhatunk kimérős tisztítószerekkel is, illetve általában a hulladékmentes életmód kellékeinek széles választékát is megtaláljuk, mint például vizes palack, textil szalvéta vagy fém szívószál.",
-      "kep": "femszivoszal.jpg"
+      "kep": "img/cikkek/femszivoszal.jpg"
     }
   ],
   "VZSCikk": [
     {
       "foCim": "A ZÖLD MARKETING",
-      "kep1": "zm5.jpg",
+      "kep1": "img/cikkek/zm5.jpg",
       "bekezdes1": "A marketing már a mindennapjaink része, mindenhol találkozhatunk vele és mindig a szemünk előtt van, még ha nem is látjuk, mint egy rejtett reklám. Mindennapunk része, tehát szinte természetessé vált, nem lenne izgalmas és hasznos ezt a természetes dolgot az életünkben zöldebbé tenni? ",
       "bekezdes2": "Ez a fejlesztés Magyarországon nem elterjedt, viszont a nyugati országok már előszeretettel használják, hiszen a fenntartható út választásával sokat profitálnak és a vállalkozásuk megítélése is javul. Nagyon fontos, hogy a zöld marketing mögött mindig konkrét, valós környezeti előny álljon. Ilyen lehet egy technológiaváltás, amely kevesebb mennyiségű, vagy könnyebben kezelhető melléktermékeket, hulladékot termel a végtermék mellett. Ilyen lehet egy hathatós kibocsátáscsökkentés, energiahatékonysági beruházások, vagy például megújuló energia felhasználásához napelemek, illetve szélturbinák telepítése. Ha elvégezzük a tanulmányainkat és indítanánk egy vállalkozást biztos van konkrét elképzelésünk, de legalább valami konkrét ötletünk, mai még kiegészítésre vár. Sok mindenre kell gondolnunk többek között a marketingünkre, de milyen is egy jó marketing? Hát nem egyértelmű? Az modern marketing, ami új és éppen az emberek érdeklődésének középpontjában áll.Gondoltad volna, hogy a vásárlók 49%-a hajlandó többet fizetni egy termékért, ha az környezetbarát? Pontosan ez derül ki a Nielsen globális kutatásából.",
-      "kep2": "zm3.jpg",
+      "kep2": "img/cikkek/zm3.jpg",
       "bekezdes3": "Valóban sikerülhet ez? Igen! Hiszen például az egyik legismertebb kávézónak a Starbucks-nak is sikerült. Kávét ragadva sokan 5% poliuretán műanyagot tartalmazó eldobható kávéscsészéket választanak, ami megnehezíti az újrahasznosítást és a komposztálást. A Starbucks azonban környezetbarát konténert fejleszt ki, amely 2020-ig megduplázza a csészék újrahasznosított tartalmát és újrafelhasználhatóságát. A cég elkötelezett amellett, hogy 99% -ban etikusan beszerzett kávéval dolgozik, ezzel a kávé a világ első fenntartható mezőgazdasági terméke lesz, és 2025-ig 100 millió kávéfát biztosít a gazdálkodóknak. A Starbucks emellett 10 000 energiahatékony, zöld kiskereskedelmi üzletet is szeretne építeni és működtetni 2025-ig.",
-      "kep3": "zm2.jpg"
+      "kep3": "img/cikkek/zm2.jpg"
     }
   ],
   "DoriCikk": [
@@ -84,18 +84,18 @@
   "GretiCikk": [
     {
       "foCim": "Mi az a TeSZedd!?",
-      "kep": "img/cikkek/kep1.jpg",
+      "kep": "img/cikkek/kep1_1.jpg",
       "bekezdes": "A TeSzedd! Önkéntesen a tiszta Magyarországért akció. Hazánk legnagyobb önkéntes mozgalma.Idén immár kilencedik alkalommal valósul meg. A szemétgyűjtési akció keretében szerte az országban „nagytakarítanak” a TeSzedd! önkéntesei. Azért szervezzük meg ezt a mozgalmat minden évben, hogy közösen megtisztítsuk szűkebb-tágabb környezetünket."
     },
     {
       "alCim": "Vízcsepp összművészeti pályázat 2022",
-      "kep": "img/cikkek/kep2.jpg",
+      "kep": "img/cikkek/kep1_2.jpg",
       "bekezdes1": "A pályázat a 2022. évi Fenntarthatósági Témahét keretében kerül meghirdetésre. A pályázat célja a diákok szemléletformálása vízhez kapcsolódó művészeti alkotások készítésével. Benyújtható pályázatok: rajz, fotó, szépirodalmi mű, zenemű, képregény, infografika, kisfilm.",
       "bekezdes2": "A pályázat célja, hogy tudatosítsa a diákok körében a víz mindennapokban betöltött fontos szerepét. A pályázat a diákok vízhez kötődő viszonyát, művészti alkotásokon keresztül kívánja felmérni. A diákoknak egy vízcsepp helyébe kell beleképzelni magukat és arról szabadon választott művészeti alkotást kell készíteni."
     },
     {
       "alCim": "Kert-kóstolgató pályázat",
-      "kep": "img/cikkek/kep3.jpg",
+      "kep": "img/cikkek/kep1_3.jpg",
       "bekezdes": "A pályázat célja, hogy az iskolás csoportok egy saját tervezésű legalább 1 m2 iskolakertet hozzanak létre. Az iskolakertbe olyan növények ültetését várjuk, amelyek az a fenntarthatóságot szolgálják. Az iskolakert létrehozását dokumentálni kell a tervezéstől a kivitelezésig"
     }
   ],
@@ -156,15 +156,15 @@
   "BareszCikk": [
     {
       "foCim": "A fenntarthatóság fogalmai:",
-      "kep1": "kep1.jpg",
+      "kep1": "img/cikkek/kep2_1.jpg",
       "alCim1": "De mit is jelent valójában a kifejezés és miért fontos, hogy foglalkozzunk vele?",
       "bekezdes1": "A fenntarthatóság fogalma 1987-ben indult útjára, amikor az ENSZ a fenntartható fejlődést – melyet azóta leegyszerűsítve fenntarthatóságnak is nevezünk – a következőképpen definiálta: fejlődés, amely „anélkül elégíti ki a jelen szükségleteit, hogy veszélyeztetné a jövő generációk lehetőségét saját igényeik kielégítésére”. Azaz fenntartható például az a fejlődés, melynek során nem használunk fel minden, korlátosan hozzáférhető nyersanyagot vagy nem szennyezzük be visszafordíthatatlanul vizeinket.",
-      "kep2": "kep2.png",
+      "kep2": "img/cikkek/kep2_2.png",
       "bekezdes2": "Mint a fenntarthatóság egészével, úgy magával a definíció értelmezésével, gyakorlatba ültetésével kapcsolatban sem teljes az összhang a témával foglalkozók között.",
       "bekezdes3": "Ennek fő oka, hogy az ENSZ által meghatározott definíció kellően általános ahhoz, hogy szabad teret engedjen a konkrét célok, valamint a célok elérését biztosító eszközök meghatározásának.",
       "alCim2": "A zéro összegű játék hívők",
       "bekezdes4": "Sok környezeti szakértő számára például a fenntartható fejlődés alapvetően egyfajta oximoronnak (önmagában való ellentmondásnak) tekinthető, hiszen a környezet befolyásolása nélkül nem képzelhető el fejlődés.",
-      "kep3": "kep3.jpg",
+      "kep3": "img/cikkek/kep2_3.jpg",
       "bekezdes5": "Ők úgy gondolják, hogy a gazdaság az emberi társadalom, a társadalom pedig a bioszféra (azaz a földi élet tere) egyik alrendszerének tekinthető, és ezek együttműködése zéróösszegű játék: amit az egyik nyer, az szükségszerűen veszteséget jelent a másik számára, miközben az ökoszisztéma (az élőlény-közösségek és élőhelyeik összessége) valamely összetevőjének túlzott használata drasztikus hatással van az ökoszisztéma egészére.",
       "alCim3": "A win-win hívők",
       "bekezdes6": "A fenntarthatóság lényege azonban sokak szerint  – éppen a nyertes-nyertes (win-win) lehetőségek kiaknázása, az olyan eszközök és megoldások megtalálása és alkalmazása, amelyekkel a társadalom és a környezet egyaránt jól jár, és amelyek révén akár évtizedek múlva is összhangban élhetünk a környezetünkkel.",
@@ -200,7 +200,7 @@
   "Vera2Cikk": [
     {
       "foCim": "Óceánok: mi a szerepük az életben, hogyan óvjuk őket?",
-      "kep": "kep2.jpg",
+      "kep": "img/cikkek/kep3_1.jpg",
       "bekezdes1": "Földünk hidroszférájának közel 71 százalékát óceánok borítják. Hatalmas területet fednek le, mégsem kapnak elég figyelmet. Célunk ezen változtatni! Cikkünk szélesíteni kívánja ismereteidet velük kapcsolatban, beutatja, hogy te mit tehetsz védelmük érdekében.",
       "alCim1": "Milyen szerepet töltenek be az óceánok a Föld életében?",
       "bekezdes2 ": "Az óceánok nélkül a bolygó élhetetlen lenne, rengeteg lehetőséget kínálnak a növekedés, a foglalkoztatás és az innováció előmozdítására. ",
@@ -236,7 +236,7 @@
       "bekezdes17": "Annak, akinek a környezettudatosság fontos szerepet játszik az életében, a kozmetikumok vásárlásánál nagyon körültekintőnek kell lennie: sok szempontból fontos, hogy az adott termék mit tartalmaz. Egyes szépítkezőszerekhez például olyan, veszélyeztetett fajokat használnak fel, mint a csikóhal.",
       "bekezdes18": "Ha tengerhez, vagy óceánhoz valamilyen formában kapcsolódó cég vezetője vagy",
       "bekezdes19": "Fordíts a nemzetközi jog érvényesítése és végrehajtása által fokozott figyelmet az óceánok és erőforrásaik megőrzésére, és fenntartható használatára az ENSZ Tengerjogi Egyezménye előírásainak megfelelően – ahogy arra „Az áhított jövő” című ENSZ-nyilatkozat 158. bekezdése emlékeztet.",
-      "link": "Óceánok: mi a szerepük az életben, hogyan óvjuk őket? | xForest"
+      "link": "https://xforest.hu/oceanok/"
     }
   ]
 }

@@ -4,6 +4,10 @@ function ID(elem) {
     return document.getElementById(elem);
 }
 
+function query(name) {
+    return document.querySelector(name);
+}
+
 function $(elem) {
     return document.querySelectorAll(elem);
 }
@@ -86,37 +90,7 @@ function megjelenit2() {
     }
 }
 
-function balra() {
-    aktKep--;
-    if (aktKep < 0) {
-        aktKep = zerowasteTomb.length - 1;
-    }
-    console.log("Ügyesek vagyunk");
-    modal.style.display = "block";
-    ID("alkoto").innerHTML = "<h1> " + zerowasteTomb[aktKep].keszitette + "</h1>";
-    console.log("ki az alkoto");
-    console.log(ID("alkoto").alt = zerowasteTomb[aktKep].keszitette)
-    megjelenit(aktKep);
-    console.log("mi a kep elérési útja");
-    ID("leiras").innerHTML = "<p> " + zerowasteTomb[aktKep].leiras + "<ul><li>Bemutatja: " + zerowasteTomb[aktKep].bemutatja + "</li></ul<p>";
-}
-
-function jobbra() {
-    aktKep++;
-    if (aktKep >= zerowasteTomb.length) {
-        aktKep = 0;
-    }
-    console.log("Ügyesek vagyunk");
-    modal.style.display = "block";
-    ID("alkoto").innerHTML = "<h1> " + zerowasteTomb[aktKep].keszitette + "</h1>";
-    console.log("ki az alkoto");
-    console.log(ID("alkoto").alt = zerowasteTomb[aktKep].keszitette)
-    megjelenit(aktKep);
-    console.log("mi a kep elérési útja");
-    ID("leiras").innerHTML = "<p> " + zerowasteTomb[aktKep].leiras + "<ul><li>Bemutatja: " + zerowasteTomb[aktKep].bemutatja + "</li></ul<p>";
-}
-
 function megjelenit(index) {
-    ID("fokep").src = zerowasteTomb[index].kepEleresiut;
+    query("#fokep>img").src = zerowasteTomb[index].kepEleresiut;
     ID("cim").alt = zerowasteTomb[index].cim;
 }
