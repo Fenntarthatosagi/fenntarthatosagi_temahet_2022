@@ -79,7 +79,7 @@ function megjelenit2() {
             console.log("ki az alkoto");
             console.log(ID("alkoto").alt = zerowasteTomb[index].keszitette)
             megjelenit(index);
-            console.log("mi a kep elérési útja");
+            console.log(megjelenit(index));
             ID("leiras").innerHTML = "<p> " + zerowasteTomb[index].leiras + "<ul><li>Bemutatja: " + zerowasteTomb[index].bemutatja + "</li></ul<p>";
             var aktKep = index;
         });
@@ -89,28 +89,31 @@ function megjelenit2() {
 function balra() {
     aktKep--;
     if (aktKep < 0) {
-        aktKep = kepektomb.length - 1;
+        aktKep = zerowasteTomb.length - 1;
     }
+    console.log("Ügyesek vagyunk");
+    modal.style.display = "block";
+    ID("alkoto").innerHTML = "<h1> " + zerowasteTomb[aktKep].keszitette + "</h1>";
+    console.log("ki az alkoto");
+    console.log(ID("alkoto").alt = zerowasteTomb[aktKep].keszitette)
     megjelenit(aktKep);
-    ID("cim").innerHTML = "<h1> " + kepektomb[aktKep].kepCim + "</h1>";
-    ID("leiras").innerHTML = "<p> " + kepektomb[aktKep].kepLeiras + "</p>";
+    console.log("mi a kep elérési útja");
+    ID("leiras").innerHTML = "<p> " + zerowasteTomb[aktKep].leiras + "<ul><li>Bemutatja: " + zerowasteTomb[aktKep].bemutatja + "</li></ul<p>";
 }
 
 function jobbra() {
     aktKep++;
-    if (aktKep >= kepektomb.length) {
+    if (aktKep >= zerowasteTomb.length) {
         aktKep = 0;
     }
+    console.log("Ügyesek vagyunk");
+    modal.style.display = "block";
+    ID("alkoto").innerHTML = "<h1> " + zerowasteTomb[aktKep].keszitette + "</h1>";
+    console.log("ki az alkoto");
+    console.log(ID("alkoto").alt = zerowasteTomb[aktKep].keszitette)
     megjelenit(aktKep);
-    ID("cim").innerHTML = "<h1> " + kepektomb[aktKep].kepCim + "</h1>";
-    ID("leiras").innerHTML = "<p> " + kepektomb[aktKep].kepLeiras + "</p>";
-}
-
-
-function kepbetoltes() {
-    console.log("Kattintottunk");
-    var rnd = Math.floor(Math.random() * kepektomb.length);
-    megjelenit(rnd);
+    console.log("mi a kep elérési útja");
+    ID("leiras").innerHTML = "<p> " + zerowasteTomb[aktKep].leiras + "<ul><li>Bemutatja: " + zerowasteTomb[aktKep].bemutatja + "</li></ul<p>";
 }
 
 function megjelenit(index) {

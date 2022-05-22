@@ -42,6 +42,24 @@
         "leiras": "Bajusz Gyöngyike ruhájánál fontos szempont volt, hogy a megvarrásánál egyáltalán ne keletkezzen hulladék. Az anyag téglalapokra lett szétvágva, amiből egy elegáns és könnyed nyári ruha készült."
 
     }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/balla/1.jpg",
+        "cim": "lol",
+        "keszitette": "Balla Robin",
+        "bemutatja": "Balla Robin",
+        "leiras": ""
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/balla/4.jpg",
+        "cim": "lol",
+        "keszitette": "Balla Robin",
+        "bemutatja": "Balla Robin",
+        "leiras": ""
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/balla/6.jpg",
+        "cim": "lol",
+        "keszitette": "Balla Robin",
+        "bemutatja": "Balla Robin",
+        "leiras": ""
+    }, {
         "kepEleresiut": "../galeria/ruhakepek/zerowaste/bartha/1.jpg",
         "cim": "lol",
         "keszitett": "Bartha Emma Zsuzsanna",
@@ -324,10 +342,58 @@
         "bemutatja": "Szoboszlai Bella",
         "leiras": "Az élénk színek es merész szabásvonalak az élet változatosságát és lendületességet tükrözik. Az öltözék Szoboszali Bella munkája."
     }, {
-        "kepEleresiut": "../galeria/ruhakepek/zerowaste/szoboszlai/18.jpg",
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/szorad/1.jpg",
         "cim": "lol",
         "keszitette": "Szórád Nikolett",
-        "bemutatja": "Szoboszlai Bella",
-        "leiras": "Az élénk színek es merész szabásvonalak az élet változatosságát és lendületességet tükrözik. Az öltözék Szoboszali Bella munkája."
+        "bemutatja": "Bencze Rubina",
+        "leiras": "Szórád Nikolett által tervezett összeállitást a fekete és rózsaszín harmoniája ihlette, melyet egy pillangós párnahuzatból készült fűző koronáz meg. "
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/szorad/6.jpg",
+        "cim": "lol",
+        "keszitette": "Szórád Nikolett",
+        "bemutatja": "Bencze Rubina",
+        "leiras": "Szórád Nikolett által tervezett összeállitást a fekete és rózsaszín harmoniája ihlette, melyet egy pillangós párnahuzatból készült fűző koronáz meg. "
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/szorad/2.jpg",
+        "cim": "lol",
+        "keszitette": "Szórád Nikolett",
+        "bemutatja": "Bencze Rubina",
+        "leiras": "Szórád Nikolett által tervezett összeállitást a fekete és rózsaszín harmoniája ihlette, melyet egy pillangós párnahuzatból készült fűző koronáz meg. "
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/toth/1.jpg",
+        "cim": "lol",
+        "keszitette": "Tóth Dávid",
+        "bemutatja": "Bencze Rubina",
+        "leiras": "Tóth Dávid által tervezett öltözék egy könnyed nyári nadrág és blúz, melyet a művész  szülővárosa, Zalaegerszeg inspirált. "
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/toth/2.jpg",
+        "cim": "lol",
+        "keszitette": "Tóth Dávid",
+        "bemutatja": "Bencze Rubina",
+        "leiras": "Tóth Dávid által tervezett öltözék egy könnyed nyári nadrág és blúz, melyet a művész  szülővárosa, Zalaegerszeg inspirált. "
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/wertheim/1.jpg",
+        "cim": "lol",
+        "keszitette": "Wertheim Loretta",
+        "bemutatja": "Wertheim Loretta",
+        "leiras": "A kifutón látható ruha egy upcycle koncepcióval készült öltözék, a tervező, Wertheim Loretta, egy kidobásra szánt ruhát alakított át egy hordható, elegáns estélyi ruhadarabbá. "
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/wertheim/2.jpg",
+        "cim": "lol",
+        "keszitette": "Wertheim Loretta",
+        "bemutatja": "Wertheim Loretta",
+        "leiras": "A kifutón látható ruha egy upcycle koncepcióval készült öltözék, a tervező, Wertheim Loretta, egy kidobásra szánt ruhát alakított át egy hordható, elegáns estélyi ruhadarabbá. "
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/wertheim/3.jpg",
+        "cim": "lol",
+        "keszitette": "Wertheim Loretta",
+        "bemutatja": "Wertheim Loretta",
+        "leiras": "A kifutón látható ruha egy upcycle koncepcióval készült öltözék, a tervező, Wertheim Loretta, egy kidobásra szánt ruhát alakított át egy hordható, elegáns estélyi ruhadarabbá. "
+    }, {
+        "kepEleresiut": "../galeria/ruhakepek/zerowaste/wertheim/4.jpg",
+        "cim": "lol",
+        "keszitette": "Wertheim Loretta",
+        "bemutatja": "Wertheim Loretta",
+        "leiras": "A kifutón látható ruha egy upcycle koncepcióval készült öltözék, a tervező, Wertheim Loretta, egy kidobásra szánt ruhát alakított át egy hordható, elegáns estélyi ruhadarabbá. "
     }]
 }

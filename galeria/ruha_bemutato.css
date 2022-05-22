@@ -172,3 +172,36 @@ section {
         width: 100%;
     }
 }
+
+.arrow {
+    position: absolute;
+    width: 3vmin;
+    height: 3vmin;
+    background: transparent;
+    border-top: 1vmin solid rgb(88, 207, 88);
+    border-right: 1vmin solid rgb(88, 207, 88);
+    box-shadow: 0 0 0 lightgray;
+    transition: all 200ms ease;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.arrow.left {
+    left: 0;
+    transform: translate3d(0, -50%, 0) rotate(-135deg);
+}
+
+.arrow:hover {
+    border-color: rgb(89, 215, 89);
+    box-shadow: 0.5vmin -0.5vmin 0 #a5f4a5;
+}
+
+.arrow:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -60%) rotate(45deg);
+    width: 200%;
+    height: 200%;
+}
