@@ -69,7 +69,7 @@ function init()
 
 function change_size()
 {
-    if(window.screen.width >= 500)
+    if(window.innerWidth >= 500)
     {
         query_all(".pair_card", q=>q.style.width = `${100/(card_num/4)}%`);
         query_all(".card_mem", q=>q.style.width = `${100/(card_num_mem/2)}%`);
