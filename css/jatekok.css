@@ -63,7 +63,7 @@ article {
     height: 100%;
 }
 
-.pair_turned, .turned_mem, .peek {
+.pair_turned, .turned_mem, .peek, .pair_done {
     height: initial !important;
 }
 
