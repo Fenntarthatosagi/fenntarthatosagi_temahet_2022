@@ -1,0 +1,53 @@
+{
+    "cikkek": [
+        {
+            "cnev": "Mi az a TeSzedd!?",
+            "cikeleres": "cikkek.html",
+            "ckep": "img/teszed.jpg",
+            "leiras": "A TeSzedd! – Önkéntesen a tiszta Magyarországért akció. Hazánk legnagyobb önkéntes mozgalma. Idén immár kilencedik alkalommal valósul meg."
+        },
+        {
+            "cnev": "VÍZCSEPP ÖSSZMŰVÉSZETI 2022.",
+            "cikeleres": "cikkek.html",
+            "ckep": "img/vizcsepp.jpg",
+            "leiras": "A pályázat a 2022. évi Fenntarthatósági Témahét keretében kerül meghirdetésre."
+        },
+        {
+            "cnev": "KERT-KÓSTOLGATÓ PÁLYÁZAT",
+            "cikeleres": "cikkek.html",
+            "ckep": "img/kert.jpg",
+            "leiras": "A pályázat célja, hogy az iskolás csoportok egy saját tervezésű legalább 1 m2 iskolakertet hozzanak létre."
+        }
+    ],
+    "galeriak": [
+        {
+            "gnev": "Divatbemutató képek",
+            "gkep": "galeria/ruhakepek/kep.jpg",
+            "leiras": "A divatbemutató"
+        },
+        {
+            "gnev": "Kreatív ötletek kollekció",
+            "gkep": "galeria/ruhakepek/kreativotletek.jpg",
+            "leiras": "Kreatívabbnál kreatívabb ötletek"
+        },
+        {
+            "gnev": "Zero waste kollekció",
+            "gkep": "galeria/ruhakepek/zerowaste.png",
+            "leiras": "Semmi sem megy szemétnek!"
+        }
+    ],
+    "tesztek": [
+        {
+            "tnev": "Alsós Tesztek",
+            "leiras": "Egyszerű rövid tesztek kis gyerekeknek"
+        },
+        {
+            "tnev": "Középiskolás Tesztek",
+            "leiras": "Középiskolás gyerekeknek ajánlott teszt kérdések"
+        },
+        {
+            "tnev": "Felnőtt Tesztek",
+            "leiras": "Nehéz teszt kérdésekkel ellátott teszt"
+        }
+    ]
+}

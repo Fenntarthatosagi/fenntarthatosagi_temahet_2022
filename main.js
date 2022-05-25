@@ -15,7 +15,8 @@ function query_all(name, arg) {
 function init() {
     //load main elements
     query("nav").innerHTML += '<ul><li><a href="index.html">Kezdőoldal</a></li><li><a href="cikkek.html">Cikkek</a></li><li><a href="tesztek.html">Tesztek</a></li><li><a href="galeria/galeria.html">Ruha bemutató</a></li><li><a href="jatekok.html">Játékok</a></li></ul>';
-    query("article").innerHTML += '<img src="">';
+    query("article").innerHTML += '<p>Itt főbb cikkeinket láthatod amik lehetőség szerint érdekesek lennének számodra</p><p>Fentebb a navigációs fülön tudsz navigálni hogy éppen mire lennél kíváncsi</p>';
+    query("aside").innerHTML += '';
     query("footer").innerHTML = "&copy; Minden jog fenntartva";
     fetch("ajanlo.json")
     .then((response) => response.json())
@@ -44,6 +45,9 @@ function feldolgoz() {
         if (key == "cnev") {
           txt += "<h1>" + cikk[key] + "</h1>";
         }
+        if (key == "cikeleres") {
+          txt += "<a href=" + cikk[key] + "></a>";
+        }
         if (key == "ckep") {
           txt += "<img src=" + cikk[key] + "></img>";
         }
@@ -54,5 +58,5 @@ function feldolgoz() {
       txt += "</div>";
     });
     console.log(txt);
-    query("article").innerHTML = txt;
+    query("aside").innerHTML = txt;
   }
