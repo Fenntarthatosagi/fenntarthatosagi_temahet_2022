@@ -44,7 +44,8 @@ function process_xlsx()
         /* convert data to binary string */
         let data = new Uint8Array(arraybuffer);
         let arr = new Array();
-        for (let i = 0; i != data.length; ++i) arr[i] = String.fromCharCode(data[i]);
+        for (let i = 0; i != data.length; ++i)
+            arr[i] = String.fromCharCode(data[i]);
         let bstr = arr.join("");
 
         /* Call XLSX */
@@ -183,7 +184,8 @@ function write_test_help(cur_sheet_num, name)
     let kerdes_div = '<form class="kerdes">';
     cur_sheet.forEach(kerdes => {
         kerdes_div += `<label>${kerdes[0]}</label><br></br>`;
-        let lehetosegek = kerdes[2].copyWithin();
+        //deep copy
+        let lehetosegek = JSON.parse(JSON.stringify(kerdes[2]));
         while(lehetosegek.length > 0)
         {
             let r = Math.floor(Math.random() * (lehetosegek.length))
